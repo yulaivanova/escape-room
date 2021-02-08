@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Escape room web-site">
-  <title>Smart device</title>
+  <meta name="description" content="Квесты в Новосибирске">
+  <title>Escape room</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/raleway-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-medium-500.woff2" as="font" crossorigin="anonymous">
@@ -14,6 +14,48 @@
   <link rel="preload" href="fonts/raleway-extrabold-800.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <div class="container container--opened">
+    <header class="header header--opened">
+      <div class="header__inner">
+        <a class="header__logo">
+          <!-- 1х: 134px; 2x: 268px -->
+          <picture>
+            <source type="image/png" media="(max-width: 1023px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+            <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png" alt="Escape Room logo" width="134" height="50">
+          </picture>
+        </a>
+        <div class="header__menu header__menu--nojs">
+          <button class="header__toggle" type="button"><span>меню</span></button>
+          <nav class="header__site-nav site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a href="#" class="site-nav__link">КВЕСТЫ</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">НОВИЧКАМ</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">ОТЗЫВЫ</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">АКЦИИ</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a href="#" class="header__link header__link--city">
+              <svg class="header__icon" width="16" height="21">
+                <use xlink:href="#pin-icon"></use>
+              </svg>
+              <span>НОВОСИБИРСК</span>
+            </a>
+            <a class="header__link" href="tel:83832840160">
+              <span>8 (383) 284 01 60</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <script src="js/menu.js"></script>
 </body>
 </html>
