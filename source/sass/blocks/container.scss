@@ -2,14 +2,20 @@
   min-width: 320px;
   min-height: 100vh;
 
-  background-image: url("../img/main-bg-desktop@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (max-width: $mobile-width) {
-    background-image: url("../img/main-bg-mobile@1x.jpg");
     background-position: top;
+  }
+}
+
+.container--index {
+  background-image: url("../img/main-bg-desktop@1x.jpg");
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/main-bg-mobile@1x.jpg");
   }
 
   &.webp {
@@ -55,4 +61,28 @@
       display:  none;
     }
   }
+}
+
+.container--nojs {
+  & header {
+      position: static;
+      min-height: auto;
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 20px;
+      }
+    }
+
+    & footer {
+      display: block;
+      z-index: 99;
+    }
+
+    & main {
+      display: block;
+    }
+
+    & .main-block {
+      min-height: auto;
+    }
 }

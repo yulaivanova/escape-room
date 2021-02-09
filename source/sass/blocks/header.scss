@@ -70,8 +70,10 @@
 }
 
 .header__menu--nojs {
-  display: flex;
-  flex-direction: column-reverse;
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .header__site-nav {
@@ -145,7 +147,7 @@
       width: 20px;
       height: 14px;
       right: 0;
-      background-image: url("../img/burger.svg");;
+      background-image: url("../img/burger.svg");
     }
   }
   .header__menu--opened .header__toggle {
