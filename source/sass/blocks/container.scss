@@ -1,11 +1,58 @@
 .container {
   min-width: 320px;
   min-height: 100vh;
+
+  background-image: url("../img/main-bg-desktop@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/main-bg-mobile@1x.jpg");
+    background-position: top;
+  }
+
+  &.webp {
+    background-image: url("../img/main-bg-desktop@1x.webp");
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/main-bg-mobile@1x.webp");
+    }
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/main-bg-desktop@2x.jpg");
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/main-bg-mobile@2x.jpg");
+    }
+
+    &.webp {
+      background-image: url("../img/main-bg-desktop@2x.webp");
+
+      @media (max-width: $mobile-width) {
+        background-image: url("../img/main-bg-mobile@2x.webp");
+      }
+    }
+  }
 }
 
 .container--opened {
   @media (max-width: $mobile-width) {
     background: linear-gradient(170.74deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
     z-index: 100;
+
+    & header {
+      position: static;
+      min-height: 100vh;
+    }
+
+    & footer {
+      display: block;
+    }
+
+    & main {
+      display:  none;
+    }
   }
 }

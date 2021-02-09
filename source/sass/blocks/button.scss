@@ -1,0 +1,24 @@
+.button {
+  border: none;
+
+  display: block;
+
+  border-radius: 65px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $orange;
+  color: $white;
+
+  &:hover {
+    background-color: $orange-hvr;
+  }
+}

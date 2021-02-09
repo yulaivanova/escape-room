@@ -4,11 +4,16 @@
   width: 100%;
 }
 
-.header--opened {
-  @media (max-width: $mobile-width) {
-    position: static;
-  }
-}
+// .header--opened {
+//   @media (max-width: $mobile-width) {
+//     position: static;
+//     min-height: 100vh;
+
+//     & + main {
+//       display:  none;
+//     }
+//   }
+// }
 
 .header__inner {
   @include center-block;
