@@ -671,8 +671,89 @@ template {
       line-height: 19px;
       color: #ffffff; } }
 
+.container {
+  min-width: 320px;
+  min-height: 100vh; }
+
 @media (max-width: 767px) {
   .container--opened {
     background: linear-gradient(170.74deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
-    min-height: 100vh;
     z-index: 100; } }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+
+.footer__inner {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  @media (max-width: 1023px) {
+    .footer__inner {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media (max-width: 767px) {
+    .footer__inner {
+      margin-bottom: 35px; } }
+
+.footer__link {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #e5e5e5;
+  text-decoration: none;
+  border-bottom: 1px dashed #e5e5e5; }
+  @media (max-width: 767px) {
+    .footer__link {
+      margin-bottom: 7px;
+      font-size: 16px;
+      line-height: 25px; } }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.social__item {
+  margin-right: 7px; }
+  .social__item:last-child {
+    margin-right: 0; }
+  @media (max-width: 767px) {
+    .social__item {
+      margin-right: 16px; } }
+
+@media (max-width: 767px) {
+  .social__icon {
+    width: 36px;
+    height: 36px; } }

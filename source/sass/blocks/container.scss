@@ -1,7 +1,11 @@
+.container {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 .container--opened {
   @media (max-width: $mobile-width) {
     background: linear-gradient(170.74deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
-    min-height: 100vh;
     z-index: 100;
   }
 }
