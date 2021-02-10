@@ -1,0 +1,62 @@
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-bottom: 12px;
+}
+
+.fieldset input {
+  padding: 16px 10px 16px 24px;
+
+  &:required:valid {
+    border-color: $green;
+  }
+
+  &:invalid {
+    border-color: $orange;
+  }
+}
+
+.fieldset__input-error {
+  color: $orange;
+  margin-top: -20px;
+  padding-left: 24px;
+  padding-bottom: 10px;
+
+  display: none;
+}
+.fieldset__input-error--show {
+  display: block;
+}
+
+.fieldset textarea,
+.fieldset input {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  line-height: 20px;
+  border-radius: 3px;
+  color: $white;
+
+  &::placeholder {
+    opacity: 0.64;
+  }
+}
+
+.fieldset textarea {
+  padding: 16px 24px;
+  resize: none;
+  max-height: 120px;
+}

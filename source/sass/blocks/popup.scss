@@ -10,6 +10,12 @@
   background-color: rgba(61, 51, 51, 0.96);
 }
 
+.popup__form .popup__wrapper {
+  min-height: 682px;
+  overflow: auto;
+  padding-bottom: 32px;
+}
+
 .popup--nojs {
   position: relative;
   display: block;
@@ -17,6 +23,7 @@
   max-width: 1461px;
   margin: 0 auto;
   background: none;
+  padding-bottom: 100px;
 
   & .popup__wrapper {
     position: static;
@@ -24,7 +31,6 @@
     display: block;
     top: 0;
     transform: none;
-    padding-bottom: 100px;
     background: none;
 
     & .popup__toggle {
@@ -33,7 +39,8 @@
   }
 }
 
-.popup__city-popup--opened {
+.popup__city-popup--opened,
+.popup__form--opened  {
   display: block;
 }
 
@@ -60,6 +67,10 @@
 
     padding: 32px 16px;
   }
+}
+
+.popup__wrapper form {
+  margin-top: 16px;
 }
 
 .popup__wrapper h2{
@@ -135,7 +146,7 @@
   display: block;
   width: 25px;
   height: 25px;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: none;
   cursor: pointer;
   border: none;
 
@@ -215,4 +226,15 @@
     height: 2px;
     background-color: $orange;
   }
+}
+
+.popup__button {
+  width: 219px;
+  padding: 15px 0 16px;
+  margin: 0 auto 24px;
+  background-color: #B8B8B8;
+}
+
+.popup__agreement {
+  margin-left: 24px;
 }

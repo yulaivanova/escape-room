@@ -1,0 +1,64 @@
+.agreement {
+  position: relative;
+}
+
+.agreement input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  left: -34px;
+}
+
+.agreement__label {
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.agreement input + label {
+  user-select: none;
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+  cursor: pointer;
+}
+
+.agreement input + label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  background: #F2890F;
+  filter: brightness(30%);
+  border-radius: 4px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.agreement input:focus + label::before {
+  filter: brightness(60%);
+}
+
+.agreement input:checked + .agreement__label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/checked-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: none;
+}
+
+.agreement__label span {
+  text-decoration: underline;
+}

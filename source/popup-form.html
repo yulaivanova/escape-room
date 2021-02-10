@@ -60,20 +60,28 @@
       </div>
     </header>
 
-    <section class="popup popup--nojs popup__city-popup">
+    <section class="popup popup--nojs popup__form">
       <div class="popup__wrapper">
-        <button class="popup__toggle" type="button" tabindex="7"><span class="visually-hidden">Закрыть
-            окно</span></button>
-        <h2>Ваш город:</h2>
-        <a href="#" class="popup__gps-link" tabindex="1">Определить местоположение</a>
-        <p>... или выберите вручную</p>
-        <ul class="popup__cities-list">
-          <li class="popup__city"><a href="#" class="popup__link popup__link--active" tabindex="2">Новосибирск</a></li>
-          <li class="popup__city"><a href="#" class="popup__link" tabindex="3">Иркутск</a></li>
-          <li class="popup__city"><a href="#" class="popup__link" tabindex="4">Смоленск</a></li>
-          <li class="popup__city"><a href="#" class="popup__link" tabindex="5">Волгоград</a></li>
-          <li class="popup__city"><a href="#" class="popup__link" tabindex="6">Комсомольск-на-Амуре</a></li>
-        </ul>
+        <button class="popup__toggle" type="button" tabindex="6"><span class="visually-hidden">Закрыть окно</span></button>
+        <h2>Задайте вопрос</h2>
+        <form action="#">
+          <fieldset class="popup__fieldset fieldset">
+            <label for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+            <input type="text" name="name" placeholder="Имя" minlength="2" id="name" tabindex="1" required>
+            <label for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+            <input type="email" name="email" placeholder="Email" minlength="3" id="email" tabindex="2"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <span class="fieldset__input-error">Введён некорректный e-mail, попробуйте заново</span>
+            <label for="question">Ваш вопрос:</label>
+            <textarea id="question" rows="6" placeholder="Начните вводить ..." tabindex="3"></textarea>
+          </fieldset>
+          <button class="popup__button button button--white" type="submit" tabindex="4">Отправить вопрос</button>
+          <div class="popup__agreement agreement">
+            <input type="checkbox" name="agreement" id="agreement" tabindex="5" checked="" required>
+            <label class="agreement__label" for="agreement">Я согласен с
+              <span>правилами обработки персональных данных</span> и пользовательским соглашением</label>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -99,7 +107,7 @@
             </li>
           </ul>
         </div>
-        <a href="popup-form.html" class="footer__link">Задать вопрос</a>
+        <a href="#" class="footer__link">Задать вопрос</a>
       </div>
     </footer>
   </div>
