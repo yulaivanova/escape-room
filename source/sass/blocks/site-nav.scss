@@ -55,6 +55,7 @@
 .site-nav__link {
   color: $link-white;
   text-decoration: none;
+  text-transform: uppercase;
   font-feature-settings: 'pnum' on, 'lnum' on;
 
   @media (max-width: $mobile-width) {

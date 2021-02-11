@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -666,6 +667,7 @@ template {
 .site-nav__link {
   color: #f0f0f0;
   text-decoration: none;
+  text-transform: uppercase;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on; }
   @media (max-width: 767px) {
@@ -683,6 +685,10 @@ template {
   @media (max-width: 767px) {
     .container {
       background-position: top; } }
+
+.container--quests {
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1F1D1D));
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%); }
 
 .container--index {
   background-image: url("../img/main-bg-desktop@1x.jpg"); }
@@ -983,6 +989,11 @@ template {
       width: 100%;
       height: 100%;
       overflow: auto;
+      -webkit-transform: none;
+              transform: none;
+      position: relative;
+      top: 0;
+      left: 0;
       padding: 32px 16px; } }
 
 .popup__wrapper form {
@@ -1137,10 +1148,12 @@ template {
   line-height: 22px;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+  position: relative; }
 
 .fieldset input {
-  padding: 16px 10px 16px 24px; }
+  padding: 16px 10px 16px 24px;
+  position: relative; }
   .fieldset input:required:valid {
     border-color: #13ba19; }
   .fieldset input:invalid {
@@ -1155,6 +1168,30 @@ template {
 
 .fieldset__input-error--show {
   display: block; }
+
+.fieldset__label-name--fill::before {
+  content: "Имя";
+  position: absolute;
+  bottom: -11px;
+  left: 24px;
+  display: block;
+  text-align: center;
+  width: 45px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1F1D1D));
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  z-index: 11; }
+
+.fieldset__label-email--fill::before {
+  content: "Email";
+  position: absolute;
+  bottom: -11px;
+  left: 24px;
+  display: block;
+  text-align: center;
+  width: 65px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1F1D1D));
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  z-index: 11; }
 
 .fieldset textarea,
 .fieldset input {
@@ -1245,3 +1282,101 @@ template {
 
 .agreement__label span {
   text-decoration: underline; }
+
+.quests {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 122px;
+  padding-left: 132px;
+  padding-right: 150px; }
+  @media (max-width: 1023px) {
+    .quests {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media (max-width: 767px) {
+    .quests {
+      padding-right: 0; } }
+
+.quests h1 {
+  color: #f2890f;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 5px; }
+
+.quests h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 43px; }
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 1029px;
+  overflow-x: auto; }
+  .filter__list::-webkit-scrollbar {
+    display: none; }
+
+.filter__item {
+  margin-right: 80px;
+  padding: 10px 0;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  letter-spacing: -0.02em; }
+  .filter__item:last-child {
+    margin-right: 0;
+    padding-right: 10px; }
+    .filter__item:last-child::after {
+      display: none; }
+  @media (max-width: 767px) {
+    .filter__item {
+      margin-right: 32px; } }
+
+.filter__item::after {
+  content: "";
+  position: absolute;
+  right: -38px;
+  width: 1px;
+  height: 40px;
+  top: calc(50% - 20px);
+  background-color: rgba(255, 255, 255, 0.32); }
+  @media (max-width: 767px) {
+    .filter__item::after {
+      right: -16px; } }
+
+.filter__item--active span {
+  position: relative;
+  display: block;
+  line-height: 26px;
+  border-bottom: 2px solid #F2890F; }
+
+.filter__icon {
+  padding-right: 8px; }
