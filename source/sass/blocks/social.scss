@@ -18,9 +18,31 @@
   }
 }
 
-.social__icon {
+.social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media (max-width: $mobile-width) {
     width: 36px;
     height: 36px;
+  }
+}
+
+.social__link--insta {
+  background-image: url("../img/instagram-icon.svg");
+
+  &:hover {
+    background-image: url("../img/instagram-hover.svg");
+  }
+}
+
+.social__link--vk {
+  background-image: url("../img/vk-icon.svg");
+
+  &:hover {
+    background-image: url("../img/vk-hover.svg");
   }
 }

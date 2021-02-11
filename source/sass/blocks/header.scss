@@ -2,18 +2,8 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
-
-// .header--opened {
-//   @media (max-width: $mobile-width) {
-//     position: static;
-//     min-height: 100vh;
-
-//     & + main {
-//       display:  none;
-//     }
-//   }
-// }
 
 .header__inner {
   @include center-block;
@@ -197,6 +187,10 @@
   @media (max-width: $mobile-width) {
     color: $white;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .header__link--city {
@@ -219,6 +213,11 @@
     & span {
       opacity: 0.22;
     }
+  }
+
+  &:hover {
+    border-bottom: 1px dashed $orange;
+    opacity: 1;
   }
 
 }

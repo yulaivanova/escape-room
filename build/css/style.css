@@ -384,7 +384,8 @@ template {
 .header {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
 
 .header__inner {
   max-width: 1366px;
@@ -578,6 +579,8 @@ template {
   @media (max-width: 767px) {
     .header__link {
       color: #ffffff; } }
+  .header__link:hover {
+    opacity: 0.7; }
 
 .header__link--city {
   font-weight: 700;
@@ -595,6 +598,9 @@ template {
       padding-bottom: 20px; }
       .header__link--city span {
         opacity: 0.22; } }
+  .header__link--city:hover {
+    border-bottom: 1px dashed #f2890f;
+    opacity: 1; }
 
 .header__icon {
   position: absolute;
@@ -675,6 +681,8 @@ template {
       font-size: 16px;
       line-height: 19px;
       color: #ffffff; } }
+  .site-nav__link:hover {
+    opacity: 0.7; }
 
 .container {
   min-width: 320px;
@@ -825,10 +833,26 @@ template {
     .social__item {
       margin-right: 16px; } }
 
-@media (max-width: 767px) {
-  .social__icon {
-    width: 36px;
-    height: 36px; } }
+.social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .social__link {
+      width: 36px;
+      height: 36px; } }
+
+.social__link--insta {
+  background-image: url("../img/instagram-icon.svg"); }
+  .social__link--insta:hover {
+    background-image: url("../img/instagram-hover.svg"); }
+
+.social__link--vk {
+  background-image: url("../img/vk-icon.svg"); }
+  .social__link--vk:hover {
+    background-image: url("../img/vk-hover.svg"); }
 
 .main-block {
   display: -webkit-box;
@@ -1297,9 +1321,14 @@ template {
     .quests {
       padding-left: 16px;
       padding-right: 16px; } }
+  @media (max-width: 1023px) {
+    .quests {
+      padding-left: 132px;
+      padding-right: 132px; } }
   @media (max-width: 767px) {
     .quests {
-      padding-right: 0; } }
+      padding-right: 0;
+      padding-left: 16px; } }
 
 .quests h1 {
   color: #f2890f;
@@ -1316,6 +1345,282 @@ template {
   color: #ffffff;
   margin: 0;
   padding-bottom: 43px; }
+  @media (max-width: 1023px) {
+    .quests h2 {
+      font-size: 46px; } }
+  @media (max-width: 767px) {
+    .quests h2 {
+      font-size: 36px;
+      line-height: 40px;
+      padding-right: 100px;
+      padding-bottom: 40px; } }
+
+.quests__filter {
+  margin-bottom: 35px; }
+
+.quests__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 32px;
+  padding-bottom: 32px; }
+  @media (max-width: 1023px) {
+    .quests__list {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) {
+    .quests__list {
+      grid-template-columns: 1fr;
+      margin-right: 16px;
+      row-gap: 16px;
+      padding-bottom: 16px; } }
+
+.quests__item {
+  position: relative; }
+
+.quests__item--hit::before {
+  content: "Хит";
+  position: absolute;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 63px;
+  top: 17px;
+  right: 19px;
+  border: 2px solid rgba(242, 137, 15, 0.74);
+  border-radius: 25px;
+  padding: 3px 12px 3px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on; }
+
+.quests__item--hit::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 56px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/star-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.quests__link {
+  width: 100%;
+  min-height: 232px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #e5e5e5;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on; }
+  .quests__link:hover {
+    -webkit-filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
+            filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
+    opacity: 0.6;
+    z-index: -99; }
+
+.quests__link--crypt {
+  background-image: url("../img/quest-1@1x.jpg"); }
+  .quests__link--crypt.webp {
+    background-image: url("../img/quest-1@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--crypt {
+      background-image: url("../img/quest-1@2x.jpg"); }
+      .quests__link--crypt.webp {
+        background-image: url("../img/quest-1@2x.webpp"); } }
+
+.quests__link--maniac {
+  background-image: url("../img/quest-2@1x.jpg"); }
+  .quests__link--maniac.webp {
+    background-image: url("../img/quest-2@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--maniac {
+      background-image: url("../img/quest-2@2x.jpg"); }
+      .quests__link--maniac.webp {
+        background-image: url("../img/quest-2@2x.webpp"); } }
+
+.quests__link--ritual {
+  background-image: url("../img/quest-3@1x.jpg"); }
+  .quests__link--ritual.webp {
+    background-image: url("../img/quest-3@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--ritual {
+      background-image: url("../img/quest-3@2x.jpg"); }
+      .quests__link--ritual.webp {
+        background-image: url("../img/quest-3@2x.webpp"); } }
+
+.quests__link--history {
+  background-image: url("../img/quest-4@1x.jpg"); }
+  .quests__link--history.webp {
+    background-image: url("../img/quest-4@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--history {
+      background-image: url("../img/quest-4@2x.jpg"); }
+      .quests__link--history.webp {
+        background-image: url("../img/quest-4@2x.webpp"); } }
+
+.quests__link--mystery {
+  background-image: url("../img/quest-5@1x.jpg"); }
+  .quests__link--mystery.webp {
+    background-image: url("../img/quest-5@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--mystery {
+      background-image: url("../img/quest-5@2x.jpg"); }
+      .quests__link--mystery.webp {
+        background-image: url("../img/quest-5@2x.webpp"); } }
+
+.quests__link--hut {
+  background-image: url("../img/quest-6@1x.jpg");
+  background-position-y: 3px; }
+  .quests__link--hut.webp {
+    background-image: url("../img/quest-6@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--hut {
+      background-image: url("../img/quest-6@2x.jpg"); }
+      .quests__link--hut.webp {
+        background-image: url("../img/quest-6@2x.webpp"); } }
+
+.quests__link--experiment {
+  background-image: url("../img/quest-7@1x.jpg"); }
+  .quests__link--experiment.webp {
+    background-image: url("../img/quest-7@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--experiment {
+      background-image: url("../img/quest-7@2x.jpg"); }
+      .quests__link--experiment.webp {
+        background-image: url("../img/quest-7@2x.webpp"); } }
+
+.quests__link--metro {
+  background-image: url("../img/quest-8@1x.jpg"); }
+  .quests__link--metro.webp {
+    background-image: url("../img/quest-8@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--metro {
+      background-image: url("../img/quest-8@2x.jpg"); }
+      .quests__link--metro.webp {
+        background-image: url("../img/quest-8@2x.webpp"); } }
+
+.quests__link--attic {
+  background-image: url("../img/quest-9@1x.jpg"); }
+  .quests__link--attic.webp {
+    background-image: url("../img/quest-9@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--attic {
+      background-image: url("../img/quest-9@2x.jpg"); }
+      .quests__link--attic.webp {
+        background-image: url("../img/quest-9@2x.webpp"); } }
+
+.quests__link--frontier {
+  background-image: url("../img/quest-10@1x.jpg");
+  background-position-x: -3px; }
+  .quests__link--frontier.webp {
+    background-image: url("../img/quest-10@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--frontier {
+      background-image: url("../img/quest-10@2x.jpg"); }
+      .quests__link--frontier.webp {
+        background-image: url("../img/quest-10@2x.webpp"); } }
+
+.quests__link--mars {
+  background-image: url("../img/quest-11@1x.jpg"); }
+  .quests__link--mars.webp {
+    background-image: url("../img/quest-11@1x.webpp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    .quests__link--mars {
+      background-image: url("../img/quest-11@2x.jpg"); }
+      .quests__link--mars.webp {
+        background-image: url("../img/quest-11@2x.webpp"); } }
+
+.quests__link h3 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 12px; }
+
+.quests__link p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  margin: 0;
+  color: rgba(229, 229, 229, 0.8);
+  position: relative; }
+
+.quests__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px; }
+
+.quests__quantity {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 10px;
+  padding-left: 21px; }
+
+.quests__level {
+  padding-left: 36px; }
+
+.quests__address {
+  padding-left: 19px; }
+
+.quests__quantity::before,
+.quests__level::before,
+.quests__address::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.quests__quantity::before {
+  width: 13px;
+  height: 16px;
+  background-image: url("../img/person-icon.svg"); }
+
+.quests__address::before {
+  width: 11px;
+  height: 14px;
+  top: 2px;
+  background-image: url("../img/pin-icon.svg"); }
+
+.quests__level::before {
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  background-image: url("../img/puzzle-icon.svg"); }
 
 .filter__list {
   margin: 0;
@@ -1356,9 +1661,14 @@ template {
     padding-right: 10px; }
     .filter__item:last-child::after {
       display: none; }
+  @media (max-width: 1023px) {
+    .filter__item {
+      margin-right: 56px; } }
   @media (max-width: 767px) {
     .filter__item {
       margin-right: 32px; } }
+  .filter__item:hover {
+    opacity: 0.6; }
 
 .filter__item::after {
   content: "";
@@ -1368,6 +1678,9 @@ template {
   height: 40px;
   top: calc(50% - 20px);
   background-color: rgba(255, 255, 255, 0.32); }
+  @media (max-width: 1023px) {
+    .filter__item::after {
+      right: -28px; } }
   @media (max-width: 767px) {
     .filter__item::after {
       right: -16px; } }

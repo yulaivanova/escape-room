@@ -38,8 +38,16 @@
     }
   }
 
+  @media (max-width: $tablet-width) {
+    margin-right: 56px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-right: 32px;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 
@@ -53,6 +61,10 @@
   top: calc(50% - 20px);
 
   background-color: rgba(255, 255, 255, 0.32);
+
+  @media (max-width: $tablet-width) {
+    right: -28px;
+  }
 
   @media (max-width: $mobile-width) {
     right: -16px;
