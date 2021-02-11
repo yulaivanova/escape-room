@@ -1,0 +1,31 @@
+.quests {
+  @include center-block;
+  padding-top: 122px;
+  padding-left: 132px;
+  padding-right: 150px;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+  }
+}
+
+.quests h1 {
+  color: $orange;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.quests h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+
+  color: $white;
+
+  margin: 0;
+  padding-bottom: 43px;
+}

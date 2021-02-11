@@ -107,7 +107,7 @@ gulp.task("clean", function () {
 // });
 
 gulp.task("main-scripts", function () {
-  return gulp.src(["source/js/popup.js", "source/js/menu.js", "source/js/storage.js", "source/js/validate.js" ])
+  return gulp.src(["source/js/popup.js", "source/js/menu.js", "source/js/storage.js", "source/js/filter.js" ])
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"));
 });

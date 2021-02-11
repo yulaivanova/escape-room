@@ -14,10 +14,13 @@
 
   font-feature-settings: 'pnum' on, 'lnum' on;
   padding-bottom: 12px;
+
+  position: relative;
 }
 
 .fieldset input {
   padding: 16px 10px 16px 24px;
+  position: relative;
 
   &:required:valid {
     border-color: $green;
@@ -38,6 +41,30 @@
 }
 .fieldset__input-error--show {
   display: block;
+}
+
+.fieldset__label-name--fill::before {
+  content: "Имя";
+  position: absolute;
+  bottom: -11px;
+  left: 24px;
+  display: block;
+  text-align: center;
+  width: 45px;
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  z-index: 11;
+}
+
+.fieldset__label-email--fill::before {
+  content: "Email";
+  position: absolute;
+  bottom: -11px;
+  left: 24px;
+  display: block;
+  text-align: center;
+  width: 65px;
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  z-index: 11;
 }
 
 .fieldset textarea,
