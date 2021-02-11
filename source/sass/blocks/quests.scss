@@ -4,8 +4,14 @@
   padding-left: 132px;
   padding-right: 150px;
 
+  @media (max-width: $tablet-width) {
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-right: 0;
+    padding-left: 16px;
   }
 }
 
@@ -28,4 +34,353 @@
 
   margin: 0;
   padding-bottom: 43px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 46px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 40px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+.quests__filter {
+  margin-bottom: 35px;
+}
+
+.quests__list {
+  @include list-reset;
+
+  max-width: 1080px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 32px;
+  padding-bottom: 32px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    margin-right: 16px;
+    row-gap: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.quests__item {
+  position: relative;
+}
+
+.quests__item--hit::before {
+  content: "Хит";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 63px;
+  top: 17px;
+  right: 19px;
+  border: 2px solid rgba(242, 137, 15, 0.74);
+  border-radius: 25px;
+  padding: 3px 12px 3px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.quests__item--hit::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 56px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/star-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quests__link {
+  width: 100%;
+  min-height: 232px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  text-decoration: none;
+  color: $text-white;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  &:hover {
+    filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
+    opacity: 0.6;
+    z-index: -99;
+    
+  }
+}
+
+.quests__link--crypt {
+  background-image: url("../img/quest-1@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-1@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-1@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-1@2x.webpp");
+    }
+  }
+}
+
+.quests__link--maniac {
+  background-image: url("../img/quest-2@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-2@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-2@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-2@2x.webpp");
+    }
+  }
+}
+
+.quests__link--ritual {
+  background-image: url("../img/quest-3@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-3@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-3@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-3@2x.webpp");
+    }
+  }
+}
+
+.quests__link--history {
+  background-image: url("../img/quest-4@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-4@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-4@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-4@2x.webpp");
+    }
+  }
+}
+
+.quests__link--mystery {
+  background-image: url("../img/quest-5@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-5@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-5@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-5@2x.webpp");
+    }
+  }
+}
+
+.quests__link--hut {
+  background-image: url("../img/quest-6@1x.jpg");
+  background-position-y: 3px;
+
+  &.webp {
+    background-image: url("../img/quest-6@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-6@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-6@2x.webpp");
+    }
+  }
+}
+
+.quests__link--experiment {
+  background-image: url("../img/quest-7@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-7@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-7@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-7@2x.webpp");
+    }
+  }
+}
+
+.quests__link--metro {
+  background-image: url("../img/quest-8@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-8@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-8@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-8@2x.webpp");
+    }
+  }
+}
+
+.quests__link--attic {
+  background-image: url("../img/quest-9@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-9@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-9@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-9@2x.webpp");
+    }
+  }
+}
+
+.quests__link--frontier {
+  background-image: url("../img/quest-10@1x.jpg");
+  background-position-x: -3px;
+
+  &.webp {
+    background-image: url("../img/quest-10@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-10@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-10@2x.webpp");
+    }
+  }
+}
+
+.quests__link--mars {
+  background-image: url("../img/quest-11@1x.jpg");
+
+  &.webp {
+    background-image: url("../img/quest-11@1x.webpp");
+  }
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/quest-11@2x.jpg");
+
+    &.webp {
+      background-image: url("../img/quest-11@2x.webpp");
+    }
+  }
+}
+
+.quests__link h3 {
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.quests__link p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  margin: 0;
+  color: rgba(229, 229, 229, 0.8);
+
+  position: relative;
+}
+
+.quests__description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  margin-top: 8px;
+}
+
+.quests__quantity {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 10px;
+  padding-left: 21px;
+}
+
+.quests__level {
+  padding-left: 36px;
+} 
+
+.quests__address {
+  padding-left: 19px;
+}
+
+.quests__quantity::before,
+.quests__level::before,
+.quests__address::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quests__quantity::before {
+  width: 13px;
+  height: 16px;
+  background-image: url("../img/person-icon.svg");
+}
+
+.quests__address::before {
+  width: 11px;
+  height: 14px;
+  top: 2px;
+  background-image: url("../img/pin-icon.svg");
+}
+
+.quests__level::before {
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  background-image: url("../img/puzzle-icon.svg");
 }
