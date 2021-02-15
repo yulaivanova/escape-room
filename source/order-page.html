@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Квест ТАЙНЫ СТАРОГО ОСОБНЯКА">
-  <title>Квест Маньяк</title>
+  <meta name="description" content="Квесты в Новосибирске">
+  <title>Заказ квеста</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/raleway-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-medium-500.woff2" as="font" crossorigin="anonymous">
@@ -19,7 +19,7 @@
   <div style="display: none;">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <div class="container container--mystic container--opened container--nojs">
+  <div class="container container--order container--opened container--nojs">
     <header class="header">
       <div class="header__inner">
         <a href="index.html" class="header__logo">
@@ -60,37 +60,93 @@
       </div>
     </header>
     <main>
-      <section class="quest-block">
-        <div class="quest-block__inner">
-          <a href="quests.html" class="quest-block__link quest-block__link--small link link--breadcrumb">ВСЕ КВЕСТЫ</a>
-          <h2>приключение, детектив</h2>
-          <h1>ТАЙНЫ СТАРОГО ОСОБНЯКА</h1>
-          <ul class="quest-block__desc-list">
-            <li class="quest-block__desk-item">
-              <svg class="quest-block__icon" width="24" height="24">
-                <use xlink:href="#clock-icon"></use>
-              </svg>
-              60 мин
-            </li>
-            <li class="quest-block__desk-item">
-              <svg class="quest-block__icon" width="29" height="24">
-                <use xlink:href="#person-icon"></use>
-              </svg>
-              2–5 чел
-            </li>
-            <li class="quest-block__desk-item">
-              <svg class="quest-block__icon" width="24" height="24">
-                <use xlink:href="#puzzle-icon"></use>
-              </svg>
-              легкий квест
-            </li>
-          </ul>
-          <p>Погрузитесь в атмосферу служебных помещений закулисья, которые хранят множество тайн и загадок. Вы окажитесь в старом
-          особняке и увидите все, что скрывают его запутанные коридоры.</p>
-          <a href="order-page.html" class="quest-block__button button">ЗАБРОНИРОВАТЬ</a>
-        </div>
+      <section class="order-block">
+        <div class="order-block__inner">
+          <div class="order-block__title">
+            <a href="quest-maniac.html" class="order-block__link link link--breadcrumb">ОПИСАНИЕ</a>
+            <h2>выбранный квест</h2>
+            <h1>МАНЬЯК</h1>
+          </div>
+          <div class="order-block__order">
+            <p>Вы выбрали игру 22 марта в 16:00. К оплате 1500 рублей.</p>
+            <a href="#" class="order-block__pay-link link link--underline">Перейти к оплате</a>
+          </div>
+          <div class="order-block__booking booking">
+            <div class="booking__date">
+              <a href="" class="booking__date-link link link--underline">Выберите дату</a>
+              <p>22 марта</p>
+            </div>
+            <div class="booking__time">
+              <ul class="booking__desc">
+                <li class="booking__desc-item booking__desc-item--available">— сводобно</li>
+                <li class="booking__desc-item booking__desc-item--not-available">— занято</li>
+                <li class="booking__desc-item booking__desc-item--selected">— выбрано вами</li>
+              </ul>
+              <ul class="booking__time-list">
+                <li class="booking__item">
+                  <input class="visually-hidden" id="9:45" type="radio" name="time" value="9:45">
+                  <label for="9:45" tabindex="0"><span>9:45</span></label>
+                  <p>1400 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="11:00" type="radio" name="time" value="11:00">
+                  <label for="11:00" tabindex="0">11:00</label>
+                  <p>1400 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="12:15" type="radio" name="time" value="12:15" disabled>
+                  <label for="12:15" tabindex="0">12:15</label>
+                  <p>1400 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="13:30" type="radio" name="time" value="13:30" disabled>
+                  <label for="13:30" tabindex="0">13:30</label>
+                  <p>1400 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="14:45" type="radio" name="time" tabindex="0" value="14:45">
+                  <label for="14:45" tabindex="0">14:45</label>
+                  <p>1400 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="16:00" type="radio" name="time" value="16:00" checked>
+                  <label for="16:00" tabindex="0">16:00</label>
+                  <p>1500 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="17:15" type="radio" name="time" value="17:15" disabled>
+                  <label for="17:15" tabindex="0">17:15</label>
+                  <p>1500 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="18:30" type="radio" name="time" value="18:30">
+                  <label for="18:30" tabindex="0">18:30</label>
+                  <p>1500 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="19:45" type="radio" name="time" value="19:45">
+                  <label for="19:45" tabindex="0">19:45</label>
+                  <p>1500 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="21:00" type="radio" name="time" value="21:00">
+                  <label for="21:00" tabindex="0">21:00</label>
+                  <p >1800 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="22:15" type="radio" name="time" value="22:15"disabled>
+                  <label for="22:15" tabindex="0">22:15</label>
+                  <p>1800 ₽</p>
+                </li>
+                <li class="booking__item">
+                  <input class="visually-hidden" id="23:30" type="radio" name="time" value="23:30" disabled>
+                  <label for="23:30" tabindex="0">23:30</label>
+                  <p>2000 ₽</p>
+                </li>
+              </div>
+            </div>
+          </div>
       </section>
-
     </main>
 
     <section class="popup popup__city-popup">
@@ -141,6 +197,7 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
+
               <a href="#" class="social__link social__link--insta">
                 <span class="visually-hidden">Ссылка на Инстаграм</span>
               </a>

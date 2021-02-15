@@ -37,6 +37,10 @@
       display: none;
     }
   }
+  
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width) {
     margin-right: 56px;
@@ -45,13 +49,15 @@
   @media (max-width: $mobile-width) {
     margin-right: 32px;
   }
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
-.filter__item::after {
+.filter__item span {
+  position: relative;
+
+  
+}
+
+.filter__item span::after {
   content: "";
   position: absolute;
   right: -38px;
