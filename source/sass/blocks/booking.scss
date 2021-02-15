@@ -16,7 +16,11 @@
 .booking__date {
   display: flex;
   flex-direction: row;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .booking__date p {
@@ -37,9 +41,11 @@
   width: 120px;
   vertical-align: bottom;
   margin-right: 24px;
+  margin-top: 4px;
 
   @media (max-width: $mobile-width) {
     width: 120px;
+    margin-right: 16px;
   }
 }
 
@@ -57,7 +63,7 @@
 
 .booking__desc-item {
   margin-right: 23px;
-  padding-left: 17px;
+  padding-left: 21px;
 
   position: relative;
 
@@ -76,6 +82,7 @@
 
   @media (max-width: $mobile-width) {
     padding-bottom: 10px;
+    margin-right: 22px;
   }
 }
 
@@ -211,5 +218,5 @@
   color: #FFFFFF;
 
   margin: 0;
-  padding-top: 3px;
+  padding-top: 4px;
 }

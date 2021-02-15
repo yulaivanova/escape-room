@@ -11,6 +11,7 @@
 
 .agreement__label {
   opacity: 0.8;
+  letter-spacing: -0.01em;
 
   &:hover {
     opacity: 1;
@@ -32,7 +33,7 @@
   content: "";
   position: absolute;
   left: -24px;
-  top: 2px;
+  top: 0;
   width: 16px;
   height: 16px;
   box-sizing: border-box;

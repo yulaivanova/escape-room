@@ -1,5 +1,5 @@
 .order-block {
-  padding-top: 138px;
+  padding-top: 136px;
   padding-left: 136px;
   padding-right: 150px;
 
@@ -40,7 +40,26 @@
 
   color: $orange;
   margin: 0;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
+  padding-left: 6px;
+
+  &:last-of-type {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    display: block;
+
+    &:first-of-type {
+      display: none;
+    }
+
+  }
 }
 
 .order-block__inner h1 {
@@ -50,7 +69,7 @@
   letter-spacing: -0.03em;
 
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 
   @media (max-width: $tablet-width) {
     font-size: 72px;
@@ -60,7 +79,8 @@
   @media (max-width: $mobile-width) {
     font-size: 42px;
     line-height: 46px;
-    padding-bottom: 11px;
+    padding-bottom: 14px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -73,7 +93,8 @@
   flex-direction: row;
 
   align-items: flex-end;
-  padding-bottom: 16px;
+  padding-bottom: 19px;
+  padding-left: 5px;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -87,10 +108,11 @@
 
   @media (max-width: $mobile-width) {
     grid-row: 3/4;
-    margin-top: 40px;
+    margin-top: 38px;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -105,9 +127,17 @@
 
   font-feature-settings: 'pnum' on, 'lnum' on;
 
+  & span {
+    display: block;
+
+    @media (max-width: $mobile-width) {
+      display: inline;
+    }
+  }
+
   @media (max-width: $mobile-width) {
     max-width: 264px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
 }
 
@@ -115,6 +145,7 @@
   margin-left: 98px;
   display: inline-block;
   width: 139px;
+  margin-bottom: 4px;
   vertical-align: bottom;
 
   @media (max-width: 1160px) {

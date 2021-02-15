@@ -12,11 +12,17 @@
   const QUESTION = document.querySelector('#question');
   const CONTAINER = document.querySelector('.container');
   const ERROR_INPUT_MSG = document.querySelector('.fieldset__input-error');
+  const LABEL_NAME = document.querySelector('.fieldset__label-name');
+  const LABEL_EMAIL = document.querySelector('.fieldset__label-email');
 
   const closePopup = function () {
     POPUP_CITY.classList.remove('popup__city-popup--opened');
     POPUP_FORM.classList.remove('popup__form--opened');
     document.body.style.overflow = 'scroll';
+
+    if (ERROR_INPUT_MSG.classList.contains('fieldset__input-error--show')) {
+      ERROR_INPUT_MSG.classList.remove('fieldset__input-error--show');
+    };
 
     if (CONTAINER.classList.contains('container--opened')) {
       window.menu.close();
@@ -43,6 +49,14 @@
 
     if (QUESTION) {
       QUESTION.value = window.storage.question;
+    }
+
+    if (EMAIL.value.length > 0) {
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
+    }
+
+    if (USER_NAME.value.length > 0) {
+      LABEL_NAME.classList.add('fieldset__label-name--fill')
     }
   };
 
@@ -75,22 +89,20 @@
     }
   }, false);
 
-  const labelName = document.querySelector('.fieldset__label-name');
-  const labelEmail = document.querySelector('.fieldset__label-email');
 
   USER_NAME.addEventListener('input', function () {
     if (USER_NAME.value.length > 0) {
-      labelName.classList.add('fieldset__label-name--fill')
+      LABEL_NAME.classList.add('fieldset__label-name--fill')
     } else {
-      labelName.classList.remove('fieldset__label-name--fill')
+      LABEL_NAME.classList.remove('fieldset__label-name--fill')
     }
   });
 
   EMAIL.addEventListener('input', function () {
     if (EMAIL.value.length > 0) {
-      labelEmail.classList.add('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
     } else {
-      labelEmail.classList.remove('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.remove('fieldset__label-email--fill')
     }
   });
 
