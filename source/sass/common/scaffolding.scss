@@ -12,6 +12,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input, textarea, select {
-  -webkit-appearance: none;
+input::-webkit-appearance,
+textarea::-webkit-appearance,
+select::-webkit-appearance {
+  appearance: none;
 }

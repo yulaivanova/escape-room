@@ -1,21 +1,31 @@
 .fieldset {
   border: none;
   margin: 0;
-  padding: 0 10px 0 0;
+  padding: 0 15px 0 0;
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 8px 0 0;
+  }
 }
 
 .fieldset label {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
+  letter-spacing: -0.02em;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
-  padding-bottom: 12px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-bottom: 14px;
 
   position: relative;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 30px;
+    word-wrap: none;
+  }
 }
 
 .fieldset input {
@@ -39,38 +49,38 @@
 
   display: none;
 }
+
 .fieldset__input-error--show {
   display: block;
 }
 
-.fieldset__label-name--fill::before {
-  content: "Имя";
+.fieldset label::before {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(230, 230, 230, 0.64);
   position: absolute;
   bottom: -11px;
   left: 24px;
   display: block;
   text-align: center;
-  width: 45px;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   z-index: 11;
+}
+
+.fieldset__label-name--fill::before {
+  content: "Имя";
+  width: 45px;
 }
 
 .fieldset__label-email--fill::before {
   content: "Email";
-  position: absolute;
-  bottom: -11px;
-  left: 24px;
-  display: block;
-  text-align: center;
   width: 65px;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
-  z-index: 11;
 }
 
 .fieldset textarea,
 .fieldset input {
   box-sizing: border-box;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.4);
   line-height: 20px;
@@ -86,4 +96,11 @@
   padding: 16px 24px;
   resize: none;
   max-height: 120px;
+}
+
+.fieldset input:hover,
+.fieldset input:focus,
+.fieldset textarea:hover,
+.fieldset textarea:focus {
+  box-shadow: 0 0 0 1px #141414;
 }

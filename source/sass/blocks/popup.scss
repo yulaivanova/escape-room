@@ -15,7 +15,7 @@
 .popup__form .popup__wrapper {
   min-height: 682px;
   overflow: auto;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
 }
 
 .popup--nojs {
@@ -24,7 +24,7 @@
 
   max-width: 1461px;
   margin: 0 auto;
-  background: none;
+  background-color: none;
   padding-bottom: 100px;
 
   & .popup__wrapper {
@@ -33,7 +33,7 @@
     display: block;
     top: 0;
     transform: none;
-    background: none;
+    background-color: none;
 
     & .popup__toggle {
       display: none;
@@ -42,7 +42,7 @@
 }
 
 .popup__city-popup--opened,
-.popup__form--opened  {
+.popup__form--opened {
   display: block;
 }
 
@@ -50,7 +50,7 @@
   position: fixed;
   width: 480px;
   min-height: 485px;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -62,7 +62,7 @@
   padding: 32px 32px 10px;
 
   z-index: 50;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
 
   @media (max-width: $mobile-width) {
@@ -79,27 +79,27 @@
 }
 
 .popup__wrapper form {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
-.popup__wrapper h2{
+.popup__wrapper h2 {
   font-weight: 800;
   font-size: 32px;
   line-height: 38px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: $white;
 
   display: flex;
   align-items: center;
 
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
 }
 
 .popup__wrapper p {
   font-size: 17px;
   line-height: 27px;
-  
+
   margin: 0;
 
   &:last-of-type {
@@ -115,6 +115,7 @@
   line-height: 27px;
   color: $text-white;
   text-decoration: none;
+  letter-spacing: -0.01em;
 
   display: inline-block;
   vertical-align: top;
@@ -132,13 +133,13 @@
     height: 24px;
     left: 0;
 
-    background-image: url("../img/gps-icon.svg");;
+    background-image: url("../img/gps-icon.svg");
   }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     right: 3px;
     opacity: 0.5;
     width: calc(100% - 36px);
@@ -149,7 +150,7 @@
 
 .popup__toggle {
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: 28px;
 
   display: block;
@@ -160,7 +161,7 @@
   border: none;
 
   @media (max-width: $mobile-width) {
-    right: 16px;
+    right: 12px;
   }
 
   &::before,
@@ -206,9 +207,9 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-  opacity: .32;
+  opacity: 0.32;
 
   color: $white;
 
@@ -240,8 +241,8 @@
 .popup__button {
   width: 219px;
   padding: 15px 0 16px;
-  margin: 0 auto 24px;
-  background-color: #B8B8B8;
+  margin: 3px auto 22px;
+  background-color: #b8b8b8;
 }
 
 .popup__agreement {

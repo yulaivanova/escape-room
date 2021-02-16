@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-width: 1029px;
+  max-width: 1079px;
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -13,14 +13,13 @@
 
 
 .filter__item {
-  margin-right: 80px;
-  padding: 10px 0;
+  padding: 5px 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.32);
+  flex: 1;
 
   cursor: pointer;
 
   white-space: nowrap;
-
-  position: relative;
 
   display: flex;
   flex-wrap: nowrap;
@@ -29,51 +28,41 @@
   font-weight: 700;
   letter-spacing: -0.02em;
 
-  &:last-child {
-    margin-right: 0;
-    padding-right: 10px;
+  &:nth-child(3n) {
+    padding-right: 28px;
 
-    &::after {
-      display: none;
+    @media (max-width: $mobile-width) {
+      padding-right: 16px;
     }
   }
-  
+
+  &:nth-child(5n) {
+    padding-right: 30px;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
 
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
   @media (max-width: $tablet-width) {
-    margin-right: 56px;
+    padding: 5px 20px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 32px;
-  }
-}
-
-.filter__item span {
-  position: relative;
-
-  
-}
-
-.filter__item span::after {
-  content: "";
-  position: absolute;
-  right: -38px;
-  width: 1px;
-  height: 40px;
-
-  top: calc(50% - 20px);
-
-  background-color: rgba(255, 255, 255, 0.32);
-
-  @media (max-width: $tablet-width) {
-    right: -28px;
-  }
-
-  @media (max-width: $mobile-width) {
-    right: -16px;
+    padding: 2px 16px;
   }
 }
 
@@ -82,9 +71,68 @@
   display: block;
   line-height: 26px;
 
-  border-bottom: 2px solid #F2890F;;
+  border-bottom: 2px solid $orange;
 }
 
 .filter__icon {
-  padding-right: 8px;
+  padding-right: 5px;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 12px;
+  }
+}
+
+.filter__icon--all-quests {
+  @media (max-width: $mobile-width) {
+    width: 20px;
+    height: 24px;
+  }
+}
+
+.filter__icon--map {
+  padding-right: 10px;
+
+  @media (max-width: $mobile-width) {
+    width: 29px;
+    height: 24px;
+  }
+}
+
+.filter__icon--scary {
+  padding-right: 14px;
+  padding-left: 6px;
+
+  @media (max-width: $mobile-width) {
+    width: 24px;
+    height: 24px;
+
+    padding-left: 0;
+  }
+}
+
+.filter__icon--mystic {
+  padding-right: 14px;
+
+  @media (max-width: $mobile-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.filter__icon--detective {
+  padding-right: 15px;
+
+  @media (max-width: $mobile-width) {
+    width: 32px;
+    height: 24px;
+  }
+}
+
+.filter__icon--atom {
+  padding-right: 14px;
+
+  @media (max-width: $mobile-width) {
+    width: 22px;
+    height: 24px;
+  }
 }

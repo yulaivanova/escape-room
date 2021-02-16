@@ -2,13 +2,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 60;
 }
 
 .header__inner {
   @include center-block;
 
-  padding-top: 24px;
+  padding-top: 20px;
+  padding-right: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,16 +17,20 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    padding-top: 20px;
   }
 }
 
 .header__logo {
+  padding-top: 5px;
+
   @media (max-width: $mobile-width) {
     align-self: start;
+    padding-top: 0;
   }
 }
 
-.header__logo img{
+.header__logo img {
   @media (max-width: $tablet-width) {
     width: 96px;
     height: 36px;
@@ -67,10 +72,10 @@
 }
 
 .header__site-nav {
-  margin-right: 137px;
+  margin-right: 138px;
 
   @media (max-width: 1130px) {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 
   @media (max-width: $tablet-width) {
@@ -82,7 +87,6 @@
   @media (max-width: $mobile-width) {
     margin-right: 0;
   }
-
 }
 
 .header__contacts {
@@ -96,7 +100,7 @@
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     padding-bottom: 40px;
-    padding-top: 44px;
+    padding-top: 37px;
   }
 }
 
@@ -107,7 +111,7 @@
     display: block;
 
     position: absolute;
-    top: -35px;
+    top: -28px;
     right: 0;
 
     width: 75px;
@@ -121,7 +125,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: "pnum" on, "lnum" on;
     text-align: left;
     text-transform: uppercase;
 
@@ -141,14 +145,19 @@
       right: 0;
       background-image: url("../img/burger.svg");
     }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
+
   .header__menu--opened .header__toggle {
     &::before,
     &::after {
       content: "";
 
       position: absolute;
-      top: 10px;
+      top: 8px;
       right: 0;
       width: 16px;
       height: 2px;
@@ -164,9 +173,8 @@
       transform: rotate(-45deg);
     }
 
-    &:active::before,
-    &:active::after {
-      background-color: rgba(255, 255, 255, 0.3);
+    &:active {
+      opacity: 0.5;
     }
   }
 }
@@ -177,7 +185,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: $link-white;
 
   @media (max-width: $tablet-width) {
@@ -186,6 +194,7 @@
 
   @media (max-width: $mobile-width) {
     color: $white;
+    letter-spacing: 0.1em;
   }
 
   &:hover {
@@ -200,7 +209,7 @@
   line-height: 14px;
   letter-spacing: 0.02em;
 
-  margin-right: 23px;
+  margin-right: 20px;
 
   @media (max-width: $tablet-width) {
     margin-right: 10px;
@@ -208,29 +217,25 @@
 
   @media (max-width: $mobile-width) {
     margin-right: 0;
-    padding-bottom: 20px;
-
-    & span {
-      opacity: 0.22;
-    }
+    margin-bottom: 20px;
   }
 
   &:hover {
     border-bottom: 1px dashed $orange;
     opacity: 1;
   }
-
 }
 
 .header__icon {
   position: absolute;
-  left: -24px;
+  left: -22px;
   bottom: -2px;
 
   @media (max-width: $mobile-width) {
     position: static;
     display: inline-block;
     vertical-align: middle;
-    padding-right: 8px;
+    padding-right: 5px;
+    height: 22px;
   }
 }

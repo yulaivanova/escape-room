@@ -9,19 +9,18 @@
 
   @media (max-width: $mobile-width) {
     justify-content: flex-start;
-    background-image:  linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 55%, #1A140D 106.79%);
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 55%, #1a140d 106.79%);
   }
 }
 
 .quest-block__inner {
   margin-left: auto;
-  margin-right: 86px;
+  margin-right: 54px;
   max-width: 680px;
   box-sizing: border-box;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 124px;
   padding-right: 125px;
-  margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
@@ -35,12 +34,16 @@
 .quest-block__inner h2 {
   font-size: 14px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   color: $orange;
 
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
+  padding-left: 7px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 .quest-block__inner h1 {
@@ -64,7 +67,8 @@
   @media (max-width: $mobile-width) {
     font-size: 42px;
     line-height: 46px;
-    padding-bottom: 16px;
+    padding-bottom: 9px;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -76,7 +80,7 @@
   align-items: center;
 
   padding-left: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
@@ -85,8 +89,7 @@
 }
 
 .quest-block__desk-item {
-  padding-right: 23px;
-  padding-left: 23px;
+  padding: 5px 23px;
   border-right: 1px solid rgba(255, 255, 255, 0.36);
   display: flex;
   align-items: center;
@@ -94,15 +97,37 @@
   font-size: 14px;
   line-height: 20px;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  &:nth-child(2n) {
+    padding-right: 24px;
+    padding-left: 18px;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 20px;
+      padding-right: 16px;
+      padding-bottom: 4px;
+    }
+  }
 
   &:first-child {
     padding-left: 0;
+
+    @media (max-width: $mobile-width) {
+      padding-right: 14px;
+      padding-bottom: 4px;
+    }
   }
 
   &:last-child {
     padding-right: 0;
     border-right: 0;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 14px;
+      padding-top: 10px;
+      line-height: 17px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -127,14 +152,16 @@
   font-size: 15px;
   line-height: 22px;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   padding-left: 32px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   margin: 0;
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
+    padding-bottom: 29px;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -154,12 +181,131 @@
 
   @media (max-width: $mobile-width) {
     display: inline-block;
-    margin-bottom: 289px;
+    vertical-align: top;
+    margin-bottom: 294px;
   }
 }
 
 .quest-block__link--small {
   @media (max-width: $mobile-width) {
     margin-bottom: 182px;
+  }
+}
+
+.quest-block__inner--ritual {
+  padding-bottom: 133px;
+}
+
+.quest-block__inner--ritual .quest-block__link {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 288px;
+  }
+}
+
+.quest-block__inner--ritual h2 {
+  padding-bottom: 19px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.quest-block__inner--ritual h1 {
+  padding-bottom: 27px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.quest-block__inner--mystic {
+  padding-top: 137px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 88px;
+  }
+}
+
+.quest-block__inner--mystic .quest-block__desc-list {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 18px;
+    padding-right: 2px;
+  }
+}
+
+.quest-block__inner--mystic h2 {
+  padding-bottom: 22px;
+  padding-left: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 24px;
+  }
+}
+
+.quest-block__inner--mystic h1 {
+  padding-bottom: 23px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 14px;
+  }
+}
+
+
+.quest-block__inner--experiment {
+  padding-top: 137px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 368px;
+  }
+}
+
+.quest-block__inner--experiment h2 {
+  padding-bottom: 22px;
+  padding-left: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 11px;
+  }
+}
+
+.quest-block__inner--experiment h1 {
+  padding-bottom: 23px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.quest-block__inner--experiment .quest-block__desc-list {
+  padding-left: 41px;
+  margin-bottom: 19px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.quest-block__inner--experiment p {
+  padding-left: 41px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
+}
+
+.quest-block__inner--experiment .quest-block__button {
+  margin-left: 40px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.quest-block__desk-item--mystic {
+  @media (max-width: $mobile-width) {
+    &:last-child {
+      padding-top: 0;
+    }
   }
 }

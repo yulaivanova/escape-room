@@ -16,7 +16,11 @@
 .booking__date {
   display: flex;
   flex-direction: row;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .booking__date p {
@@ -37,9 +41,11 @@
   width: 120px;
   vertical-align: bottom;
   margin-right: 24px;
+  margin-top: 4px;
 
   @media (max-width: $mobile-width) {
     width: 120px;
+    margin-right: 16px;
   }
 }
 
@@ -57,7 +63,7 @@
 
 .booking__desc-item {
   margin-right: 23px;
-  padding-left: 17px;
+  padding-left: 21px;
 
   position: relative;
 
@@ -66,7 +72,7 @@
   font-size: 12px;
   line-height: 17px;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   color: rgba(255, 255, 255, 0.82);
 
@@ -76,6 +82,7 @@
 
   @media (max-width: $mobile-width) {
     padding-bottom: 10px;
+    margin-right: 22px;
   }
 }
 
@@ -90,17 +97,17 @@
 }
 
 .booking__desc-item--available::before {
-  border: 2px solid #C4C4C4;
+  border: 2px solid #c4c4c4;
 }
 
 .booking__desc-item--not-available::before {
   border: none;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background-image: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 
 .booking__desc-item--selected::before {
   border: none;
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background-image: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
 
 .booking__time-list {
@@ -124,7 +131,6 @@
     column-gap: 24px;
     row-gap: 32px;
   }
-
 }
 
 .booking__item label {
@@ -145,7 +151,7 @@
 
   text-align: center;
   letter-spacing: 0.05em;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   color: $white;
 }
@@ -157,7 +163,7 @@
   left: 0;
   top: 0;
 
-  border: 2px solid #C4C4C4;
+  border: 2px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 65px;
   width: 110px;
@@ -178,7 +184,7 @@
   display: block;
   position: absolute;
   border: none;
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background-image: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
   z-index: -10;
 }
 
@@ -192,7 +198,7 @@
   display: block;
   position: absolute;
   border: none;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background-image: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
   z-index: -10;
 }
 
@@ -206,10 +212,10 @@
   font-size: 12px;
   line-height: 17px;
   text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-  color: #FFFFFF;
+  color: $white;
 
   margin: 0;
-  padding-top: 3px;
+  padding-top: 4px;
 }
