@@ -697,170 +697,130 @@ template {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
   background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%); }
 
-.container--nojs .main-block,
 .container--index {
   background-image: url("../img/main-bg-desktop@1x.jpg"); }
   @media (max-width: 767px) {
-    .container--nojs .main-block,
     .container--index {
       background-image: url("../img/main-bg-mobile@1x.jpg"); } }
-  .container--nojs .main-block.webp,
   .container--index.webp {
     background-image: url("../img/main-bg-desktop@1x.webp"); }
     @media (max-width: 767px) {
-      .container--nojs .main-block.webp,
       .container--index.webp {
         background-image: url("../img/main-bg-mobile@1x.webp"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-    .container--nojs .main-block,
     .container--index {
       background-image: url("../img/main-bg-desktop@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-    .container--nojs .main-block,
     .container--index {
       background-image: url("../img/main-bg-mobile@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-      .container--nojs .main-block.webp,
       .container--index.webp {
         background-image: url("../img/main-bg-desktop@2x.webp"); } }
     @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-      .container--nojs .main-block.webp,
       .container--index.webp {
         background-image: url("../img/main-bg-mobile@2x.webp"); } }
 
-.container--nojs .quest-block--maniac,
 .container--maniac {
   background-image: url("../img/maniac-bg-desktop@1x.jpg");
   background-position: left; }
   @media (max-width: 767px) {
-    .container--nojs .quest-block--maniac,
     .container--maniac {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.jpg");
       background-size: 100% auto;
       background-position: top; } }
-  .container--nojs .quest-block--maniac.webp,
   .container--maniac.webp {
     background-image: url("../img/maniac-bg-desktop@1x.webp"); }
     @media (max-width: 767px) {
-      .container--nojs .quest-block--maniac.webp,
       .container--maniac.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.webp"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-    .container--nojs .quest-block--maniac,
     .container--maniac {
       background-image: url("../img/maniac-bg-desktop@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-    .container--nojs .quest-block--maniac,
     .container--maniac {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-      .container--nojs .quest-block--maniac.webp,
       .container--maniac.webp {
         background-image: url("../img/maniac-bg-desktop@2x.webp"); } }
     @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-      .container--nojs .quest-block--maniac.webp,
       .container--maniac.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.webp"); } }
 
-.container--nojs .quest-block--mystic,
 .container--mystic {
   background-image: url("../img/secrets-bg-desktop@1x.jpg");
   background-position: left; }
   @media (max-width: 767px) {
-    .container--nojs .quest-block--mystic,
     .container--mystic {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.jpg");
       background-size: 100% auto;
       background-position: top; } }
-  .container--nojs .quest-block--mystic.webp,
   .container--mystic.webp {
     background-image: url("../img/secrets-bg-desktop@1x.webp"); }
     @media (max-width: 767px) {
-      .container--nojs .quest-block--mystic.webp,
       .container--mystic.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.webp"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-    .container--nojs .quest-block--mystic,
     .container--mystic {
       background-image: url("../img/secrets-bg-desktop@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-    .container--nojs .quest-block--mystic,
     .container--mystic {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-      .container--nojs .quest-block--mystic.webp,
       .container--mystic.webp {
         background-image: url("../img/secrets-bg-desktop@2x.webp"); } }
     @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-      .container--nojs .quest-block--mystic.webp,
       .container--mystic.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.webp"); } }
 
-.container--nojs .quest-block--ritual,
 .container--ritual {
   background-image: url("../img/ritual-bg-desktop@1x.jpg");
   background-position: left; }
   @media (max-width: 767px) {
-    .container--nojs .quest-block--ritual,
     .container--ritual {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.jpg");
       background-size: 100% auto;
       background-position: top; } }
-  .container--nojs .quest-block--ritual.webp,
   .container--ritual.webp {
     background-image: url("../img/ritual-bg-desktop@1x.webp"); }
     @media (max-width: 767px) {
-      .container--nojs .quest-block--ritual.webp,
       .container--ritual.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.webp"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-    .container--nojs .quest-block--ritual,
     .container--ritual {
       background-image: url("../img/ritual-bg-desktop@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-    .container--nojs .quest-block--ritual,
     .container--ritual {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-      .container--nojs .quest-block--ritual.webp,
       .container--ritual.webp {
         background-image: url("../img/ritual-bg-desktop@2x.webp"); } }
     @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-      .container--nojs .quest-block--ritual.webp,
       .container--ritual.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.webp"); } }
 
-.container--nojs .quest-block--experiment,
 .container--experiment {
   background-image: url("../img/experiment-bg-desktop@1x.jpg");
   background-position: left; }
   @media (max-width: 767px) {
-    .container--nojs .quest-block--experiment,
     .container--experiment {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.jpg");
       background-size: 100% auto;
       background-position: top; } }
-  .container--nojs .quest-block--experiment.webp,
   .container--experiment.webp {
     background-image: url("../img/experiment-bg-desktop@1x.webp"); }
     @media (max-width: 767px) {
-      .container--nojs .quest-block--experiment.webp,
       .container--experiment.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.webp"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-    .container--nojs .quest-block--experiment,
     .container--experiment {
       background-image: url("../img/experiment-bg-desktop@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-    .container--nojs .quest-block--experiment,
     .container--experiment {
       background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
-      .container--nojs .quest-block--experiment.webp,
       .container--experiment.webp {
         background-image: url("../img/experiment-bg-desktop@2x.webp"); } }
     @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px) {
-      .container--nojs .quest-block--experiment.webp,
       .container--experiment.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.webp"); } }
 
@@ -890,6 +850,10 @@ template {
       .container--order.webp {
         background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/order-bg-mobile@2x.webp"); } }
 
+.container--nojs .main-block,
+.container--nojs .quest-block {
+  background-image: none; }
+
 @media (max-width: 767px) {
   .container--opened {
     background-image: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
@@ -909,13 +873,7 @@ template {
     display: block;
     z-index: 99; }
   .container--nojs main {
-    display: block; } }
-
-.container--nojs .main-block,
-.container--nojs .quest-block {
-  background-image: none; }
-
-@media (max-width: 767px) {
+    display: block; }
   .container--nojs .quest-block {
     background-size: 100% auto;
     background-repeat: no-repeat;
