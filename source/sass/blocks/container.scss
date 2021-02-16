@@ -12,9 +12,10 @@
 }
 
 .container--quests {
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
 
+.container--nojs .main-block,
 .container--index {
   background-image: url("../img/main-bg-desktop@1x.jpg");
 
@@ -47,22 +48,22 @@
   }
 }
 
+.container--nojs .quest-block--maniac,
 .container--maniac {
   background-image: url("../img/maniac-bg-desktop@1x.jpg");
   background-position: left;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/maniac-bg-mobile@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.jpg");
     background-size: 100% auto;
     background-position: top;
-    
   }
 
   &.webp {
     background-image: url("../img/maniac-bg-desktop@1x.webp");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/maniac-bg-mobile@1x.webp");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.webp");
     }
   }
 
@@ -70,35 +71,35 @@
     background-image: url("../img/maniac-bg-desktop@2x.jpg");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/maniac-bg-mobile@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.jpg");
     }
 
     &.webp {
       background-image: url("../img/maniac-bg-desktop@2x.webp");
 
       @media (max-width: $mobile-width) {
-        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/maniac-bg-mobile@2x.webp");
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.webp");
       }
     }
   }
 }
 
+.container--nojs .quest-block--mystic,
 .container--mystic {
   background-image: url("../img/secrets-bg-desktop@1x.jpg");
   background-position: left;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/secrets-bg-mobile@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.jpg");
     background-size: 100% auto;
     background-position: top;
-    
   }
 
   &.webp {
     background-image: url("../img/secrets-bg-desktop@1x.webp");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/secrets-bg-mobile@1x.webp");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.webp");
     }
   }
 
@@ -106,25 +107,26 @@
     background-image: url("../img/secrets-bg-desktop@2x.jpg");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/secrets-bg-mobile@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.jpg");
     }
 
     &.webp {
       background-image: url("../img/secrets-bg-desktop@2x.webp");
 
       @media (max-width: $mobile-width) {
-        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/secrets-bg-mobile@2x.webp");
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.webp");
       }
     }
   }
 }
 
+.container--nojs .quest-block--ritual,
 .container--ritual {
   background-image: url("../img/ritual-bg-desktop@1x.jpg");
   background-position: left;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/ritual-bg-mobile@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.jpg");
     background-size: 100% auto;
     background-position: top;
   }
@@ -133,7 +135,7 @@
     background-image: url("../img/ritual-bg-desktop@1x.webp");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/ritual-bg-mobile@1x.webp");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.webp");
     }
   }
 
@@ -141,25 +143,26 @@
     background-image: url("../img/ritual-bg-desktop@2x.jpg");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/ritual-bg-mobile@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@2x.jpg");
     }
 
     &.webp {
       background-image: url("../img/ritual-bg-desktop@2x.webp");
 
       @media (max-width: $mobile-width) {
-        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/secrets-bg-mobile@2x.webp");
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.webp");
       }
     }
   }
 }
 
+.container--nojs .quest-block--experiment,
 .container--experiment {
   background-image: url("../img/experiment-bg-desktop@1x.jpg");
   background-position: left;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/experiment-bg-mobile@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.jpg");
     background-size: 100% auto;
     background-position: top;
   }
@@ -168,7 +171,7 @@
     background-image: url("../img/experiment-bg-desktop@1x.webp");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/experiment-bg-mobile@1x.webp");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.webp");
     }
   }
 
@@ -176,14 +179,14 @@
     background-image: url("../img/experiment-bg-desktop@2x.jpg");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/experiment-bg-mobile@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.jpg");
     }
 
     &.webp {
       background-image: url("../img/experiment-bg-desktop@2x.webp");
 
       @media (max-width: $mobile-width) {
-        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/experiment-bg-mobile@2x.webp");
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.webp");
       }
     }
   }
@@ -194,7 +197,7 @@
   background-position: left;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/order-bg-mobile@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/order-bg-mobile@1x.jpg");
     background-size: 100% auto;
     background-position: top;
   }
@@ -203,7 +206,7 @@
     background-image: url("../img/order-bg-desktop@1x.webp");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/order-bg-mobile@1x.webp");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/order-bg-mobile@1x.webp");
     }
   }
 
@@ -211,59 +214,144 @@
     background-image: url("../img/order-bg-desktop@2x.jpg");
 
     @media (max-width: $mobile-width) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/order-bg-mobile@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/order-bg-mobile@2x.jpg");
     }
 
     &.webp {
       background-image: url("../img/order-bg-desktop@2x.webp");
 
       @media (max-width: $mobile-width) {
-        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/order-bg-mobile@2x.webp");
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/order-bg-mobile@2x.webp");
       }
     }
   }
 }
 
-.container--opened {
-  @media (max-width: $mobile-width) {
-    background: linear-gradient(170.74deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
+@media (max-width: $mobile-width) {
+  .container--opened {
+    background-image: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
     z-index: 100;
+  }
 
-    & header {
-      position: static;
-      min-height: 100vh;
-    }
+  .container--opened header {
+    position: static;
+    min-height: 100vh;
+  }
 
-    & footer {
-      display: block;
-    }
+  .container--opened footer {
+    display: block;
+  }
 
-    & main {
-      display:  none;
-    }
+  .container--opened main {
+    display: none;
+  }
+
+  .container--nojs header {
+    position: static;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  .container--nojs footer {
+    display: block;
+    z-index: 99;
+  }
+
+  .container--nojs main {
+    display: block;
   }
 }
 
-.container--nojs {
-  & header {
-      position: static;
-      min-height: auto;
+.container--nojs .main-block,
+.container--nojs .quest-block {
+  background-image: none;
+}
 
-      @media (max-width: $mobile-width) {
-        margin-bottom: 20px;
+@media (max-width: $mobile-width) {
+  .container--nojs .quest-block {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+  }
+
+  .container--nojs .main-block {
+    min-height: auto;
+    background-image: url("../img/main-bg-mobile@1x.jpg");
+
+    &.webp {
+      background-image: url("../img/main-bg-mobile@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../img/main-bg-mobile@2x.jpg");
+
+      &.webp {
+        background-image: url("../img/main-bg-mobile@2x.webp");
       }
     }
+  }
 
-    & footer {
-      display: block;
-      z-index: 99;
+  .container--nojs .quest-block--maniac {
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.jpg");
+
+    &.webp {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@1x.webp");
     }
 
-    & main {
-      display: block;
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.jpg");
+
+      &.webp {
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/maniac-bg-mobile@2x.webp");
+      }
+    }
+  }
+
+  .container--nojs .quest-block--ritual {
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.jpg");
+
+    &.webp {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@1x.webp");
     }
 
-    & .main-block {
-      min-height: auto;
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@2x.jpg");
+
+      &.webp {
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/ritual-bg-mobile@2x.webp");
+      }
     }
+  }
+
+  .container--nojs .quest-block--mystic {
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.jpg");
+
+    &.webp {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.jpg");
+
+      &.webp {
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/secrets-bg-mobile@2x.webp");
+      }
+    }
+  }
+
+  .container--nojs .quest-block--experiment {
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.jpg");
+
+    &.webp {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.jpg");
+
+      &.webp {
+        background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/experiment-bg-mobile@2x.webp");
+      }
+    }
+  }
 }

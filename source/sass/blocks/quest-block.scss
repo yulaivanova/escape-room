@@ -9,7 +9,7 @@
 
   @media (max-width: $mobile-width) {
     justify-content: flex-start;
-    background-image:  linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 55%, #1A140D 106.79%);
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 55%, #1a140d 106.79%);
   }
 }
 
@@ -34,7 +34,6 @@
 .quest-block__inner h2 {
   font-size: 14px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   color: $orange;
 
@@ -98,7 +97,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   &:nth-child(2n) {
     padding-right: 24px;
@@ -153,7 +152,7 @@
   font-size: 15px;
   line-height: 22px;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   padding-left: 32px;
   padding-bottom: 45px;
@@ -182,6 +181,7 @@
 
   @media (max-width: $mobile-width) {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 294px;
   }
 }
@@ -194,27 +194,27 @@
 
 .quest-block__inner--ritual {
   padding-bottom: 133px;
+}
 
-  & .quest-block__link {
-    @media (max-width: $mobile-width) {
-      margin-bottom: 288px;
-    }
+.quest-block__inner--ritual .quest-block__link {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 288px;
   }
+}
 
-  & h2 {
-    padding-bottom: 19px;
+.quest-block__inner--ritual h2 {
+  padding-bottom: 19px;
 
-    @media (max-width: $mobile-width) {
-      padding-bottom: 10px;
-    }
+  @media (max-width: $mobile-width) {
+    padding-bottom: 10px;
   }
+}
 
-  & h1 {
+.quest-block__inner--ritual h1 {
   padding-bottom: 27px;
 
-    @media (max-width: $mobile-width) {
-      padding-bottom: 7px;
-    }
+  @media (max-width: $mobile-width) {
+    padding-bottom: 7px;
   }
 }
 
@@ -223,30 +223,33 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 88px;
-
-    & .quest-block__desc-list {
-      margin-bottom: 18px;
-      padding-right: 2px;
-    }
-  }
-
-  & h2 {
-    padding-bottom: 22px;
-    padding-left: 0;
-
-    @media (max-width: $mobile-width) {
-      padding-bottom: 24px;
-    }
-  }
-
-  & h1 {
-    padding-bottom: 23px;
-
-    @media (max-width: $mobile-width) {
-      padding-bottom: 14px;
-    }
   }
 }
+
+.quest-block__inner--mystic .quest-block__desc-list {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 18px;
+    padding-right: 2px;
+  }
+}
+
+.quest-block__inner--mystic h2 {
+  padding-bottom: 22px;
+  padding-left: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 24px;
+  }
+}
+
+.quest-block__inner--mystic h1 {
+  padding-bottom: 23px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 14px;
+  }
+}
+
 
 .quest-block__inner--experiment {
   padding-top: 137px;
@@ -254,59 +257,53 @@
   @media (max-width: $mobile-width) {
     padding-top: 368px;
   }
+}
 
-  & h2 {
-    padding-bottom: 22px;
+.quest-block__inner--experiment h2 {
+  padding-bottom: 22px;
+  padding-left: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 11px;
+  }
+}
+
+.quest-block__inner--experiment h1 {
+  padding-bottom: 23px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.quest-block__inner--experiment .quest-block__desc-list {
+  padding-left: 41px;
+  margin-bottom: 19px;
+
+  @media (max-width: $mobile-width) {
     padding-left: 0;
-
-    @media (max-width: $mobile-width) {
-      padding-bottom: 11px;
-    }
+    margin-bottom: 15px;
   }
+}
 
-  & h1 {
-    padding-bottom: 23px;
+.quest-block__inner--experiment p {
+  padding-left: 41px;
 
-    @media (max-width: $mobile-width) {
-      padding-bottom: 7px;
-    }
-
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
   }
+}
 
-  & .quest-block__desc-list {
-    padding-left: 41px;
-    margin-bottom: 19px;
+.quest-block__inner--experiment .quest-block__button {
+  margin-left: 40px;
 
-    @media (max-width: $mobile-width) {
-      padding-left: 0;
-      margin-bottom: 15px;
-    }
-
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
   }
-
-  & p {
-    padding-left: 41px;
-
-    @media (max-width: $mobile-width) {
-      padding-left: 0;
-    }
-
-  }
-
-  & .quest-block__button {
-    margin-left: 40px;
-
-    @media (max-width: $mobile-width) {
-      margin-left: 0;
-    }
-
-  }
-
 }
 
 .quest-block__desk-item--mystic {
   @media (max-width: $mobile-width) {
-
     &:last-child {
       padding-top: 0;
     }

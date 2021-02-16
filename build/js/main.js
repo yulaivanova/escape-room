@@ -1,3 +1,6 @@
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 
 (function () {
@@ -22,7 +25,7 @@
 
     if (ERROR_INPUT_MSG.classList.contains('fieldset__input-error--show')) {
       ERROR_INPUT_MSG.classList.remove('fieldset__input-error--show');
-    };
+    }
 
     if (CONTAINER.classList.contains('container--opened')) {
       window.menu.close();
@@ -52,11 +55,11 @@
     }
 
     if (EMAIL.value.length > 0) {
-      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill');
     }
 
     if (USER_NAME.value.length > 0) {
-      LABEL_NAME.classList.add('fieldset__label-name--fill')
+      LABEL_NAME.classList.add('fieldset__label-name--fill');
     }
   };
 
@@ -80,7 +83,7 @@
       closePopup();
       document.removeEventListener('keydown', onEscPress);
     }
-  }
+  };
 
   EMAIL.addEventListener('input', function () {
     ERROR_INPUT_MSG.classList.add('fieldset__input-error--show');
@@ -92,17 +95,17 @@
 
   USER_NAME.addEventListener('input', function () {
     if (USER_NAME.value.length > 0) {
-      LABEL_NAME.classList.add('fieldset__label-name--fill')
+      LABEL_NAME.classList.add('fieldset__label-name--fill');
     } else {
-      LABEL_NAME.classList.remove('fieldset__label-name--fill')
+      LABEL_NAME.classList.remove('fieldset__label-name--fill');
     }
   });
 
   EMAIL.addEventListener('input', function () {
     if (EMAIL.value.length > 0) {
-      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill');
     } else {
-      LABEL_EMAIL.classList.remove('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.remove('fieldset__label-email--fill');
     }
   });
 
@@ -135,41 +138,47 @@
 
 })();
 
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 (function () {
 
-  var navMain = document.querySelector('.header__menu');
-  var navToggle = document.querySelector('.header__toggle');
-  var container = document.querySelector('.container');
+  const NAV_MAIN = document.querySelector('.header__menu');
+  const NAV_TOGGLE = document.querySelector('.header__toggle');
+  const CONTAINER = document.querySelector('.container');
 
-  navMain.classList.remove('header__menu--nojs');
-  navMain.classList.add('header__menu--closed');
-  container.classList.remove('container--opened');
-  container.classList.remove('container--nojs');
+  NAV_MAIN.classList.remove('header__menu--nojs');
+  NAV_MAIN.classList.add('header__menu--closed');
+  CONTAINER.classList.remove('container--opened');
+  CONTAINER.classList.remove('container--nojs');
 
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('header__menu--closed')) {
-      navMain.classList.remove('header__menu--closed');
-      navMain.classList.add('header__menu--opened');
-      container.classList.toggle('container--opened');
+  NAV_TOGGLE.addEventListener('click', function () {
+    if (NAV_MAIN.classList.contains('header__menu--closed')) {
+      NAV_MAIN.classList.remove('header__menu--closed');
+      NAV_MAIN.classList.add('header__menu--opened');
+      CONTAINER.classList.toggle('container--opened');
     } else {
-      navMain.classList.add('header__menu--closed');
-      navMain.classList.remove('header__menu--opened');
-      container.classList.toggle('container--opened');
+      NAV_MAIN.classList.add('header__menu--closed');
+      NAV_MAIN.classList.remove('header__menu--opened');
+      CONTAINER.classList.toggle('container--opened');
     }
   });
 
-  var closeMenu = function () {
-    navMain.classList.add('header__menu--closed');
-    navMain.classList.remove('header__menu--opened');
-    container.classList.remove('container--opened');
-  }
+  const closeMenu = function () {
+    NAV_MAIN.classList.add('header__menu--closed');
+    NAV_MAIN.classList.remove('header__menu--opened');
+    CONTAINER.classList.remove('container--opened');
+  };
 
   window.menu = {
     close: closeMenu,
-  }
+  };
 
 })();
+
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
 
 'use strict';
 
@@ -195,18 +204,24 @@
   };
 
 })();
+
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 
 (function () {
   const TAB_NAV = document.querySelectorAll('.filter__item');
-  var ENTER_KEY = 13;
+  const ENTER_KEY = 13;
   let tabName;
 
   TAB_NAV.forEach(item => {
     item.addEventListener('click', selectTabNav);
     item.addEventListener('keydown', function (evt) {
       tabName = this.getAttribute('data-tab-name');
-      if (evt.keyCode === ENTER_KEY) selectTabNavOnEnter(tabName);
+      if (evt.keyCode === ENTER_KEY) {
+        selectTabNavOnEnter(tabName);
+      }
     });
   });
 
@@ -215,12 +230,12 @@
       item.classList.remove('filter__item--active');
     });
     this.classList.add('filter__item--active');
-  };
+  }
 
   function selectTabNavOnEnter() {
     TAB_NAV.forEach(item => {
       item.dataset.tabName === tabName ? item.classList.add('filter__item--active') : item.classList.remove('filter__item--active');
     });
-  };
+  }
 
 })();

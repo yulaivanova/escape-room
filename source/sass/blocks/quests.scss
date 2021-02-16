@@ -98,7 +98,7 @@
   font-size: 12px;
   line-height: 17px;
   text-align: right;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   @media (max-width: $mobile-width) {
     right: 14px;
@@ -135,16 +135,16 @@
 
   padding-left: 18px;
   padding-bottom: 20px;
+  padding-right: 35px;
 
   text-decoration: none;
   color: $text-white;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   &:hover {
     filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
     opacity: 0.6;
     z-index: -99;
-    
   }
 }
 
@@ -362,7 +362,7 @@
 
 .quests__level {
   padding-left: 36px;
-} 
+}
 
 .quests__address {
   padding-left: 21px;

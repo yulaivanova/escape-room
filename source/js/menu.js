@@ -1,35 +1,38 @@
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 (function () {
 
-  var navMain = document.querySelector('.header__menu');
-  var navToggle = document.querySelector('.header__toggle');
-  var container = document.querySelector('.container');
+  const NAV_MAIN = document.querySelector('.header__menu');
+  const NAV_TOGGLE = document.querySelector('.header__toggle');
+  const CONTAINER = document.querySelector('.container');
 
-  navMain.classList.remove('header__menu--nojs');
-  navMain.classList.add('header__menu--closed');
-  container.classList.remove('container--opened');
-  container.classList.remove('container--nojs');
+  NAV_MAIN.classList.remove('header__menu--nojs');
+  NAV_MAIN.classList.add('header__menu--closed');
+  CONTAINER.classList.remove('container--opened');
+  CONTAINER.classList.remove('container--nojs');
 
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('header__menu--closed')) {
-      navMain.classList.remove('header__menu--closed');
-      navMain.classList.add('header__menu--opened');
-      container.classList.toggle('container--opened');
+  NAV_TOGGLE.addEventListener('click', function () {
+    if (NAV_MAIN.classList.contains('header__menu--closed')) {
+      NAV_MAIN.classList.remove('header__menu--closed');
+      NAV_MAIN.classList.add('header__menu--opened');
+      CONTAINER.classList.toggle('container--opened');
     } else {
-      navMain.classList.add('header__menu--closed');
-      navMain.classList.remove('header__menu--opened');
-      container.classList.toggle('container--opened');
+      NAV_MAIN.classList.add('header__menu--closed');
+      NAV_MAIN.classList.remove('header__menu--opened');
+      CONTAINER.classList.toggle('container--opened');
     }
   });
 
-  var closeMenu = function () {
-    navMain.classList.add('header__menu--closed');
-    navMain.classList.remove('header__menu--opened');
-    container.classList.remove('container--opened');
-  }
+  const closeMenu = function () {
+    NAV_MAIN.classList.add('header__menu--closed');
+    NAV_MAIN.classList.remove('header__menu--opened');
+    CONTAINER.classList.remove('container--opened');
+  };
 
   window.menu = {
     close: closeMenu,
-  }
+  };
 
 })();

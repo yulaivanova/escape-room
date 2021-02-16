@@ -1,3 +1,6 @@
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 
 (function () {

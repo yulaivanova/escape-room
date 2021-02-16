@@ -24,7 +24,7 @@
 
   max-width: 1461px;
   margin: 0 auto;
-  background: none;
+  background-color: none;
   padding-bottom: 100px;
 
   & .popup__wrapper {
@@ -33,7 +33,7 @@
     display: block;
     top: 0;
     transform: none;
-    background: none;
+    background-color: none;
 
     & .popup__toggle {
       display: none;
@@ -42,7 +42,7 @@
 }
 
 .popup__city-popup--opened,
-.popup__form--opened  {
+.popup__form--opened {
   display: block;
 }
 
@@ -50,7 +50,7 @@
   position: fixed;
   width: 480px;
   min-height: 485px;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -62,7 +62,7 @@
   padding: 32px 32px 10px;
 
   z-index: 50;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
 
   @media (max-width: $mobile-width) {
@@ -82,11 +82,11 @@
   margin-top: 14px;
 }
 
-.popup__wrapper h2{
+.popup__wrapper h2 {
   font-weight: 800;
   font-size: 32px;
   line-height: 38px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: $white;
 
   display: flex;
@@ -99,7 +99,7 @@
 .popup__wrapper p {
   font-size: 17px;
   line-height: 27px;
-  
+
   margin: 0;
 
   &:last-of-type {
@@ -133,7 +133,7 @@
     height: 24px;
     left: 0;
 
-    background-image: url("../img/gps-icon.svg");;
+    background-image: url("../img/gps-icon.svg");
   }
 
   &::after {
@@ -207,9 +207,9 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-  opacity: .32;
+  opacity: 0.32;
 
   color: $white;
 
@@ -242,7 +242,7 @@
   width: 219px;
   padding: 15px 0 16px;
   margin: 3px auto 22px;
-  background-color: #B8B8B8;
+  background-color: #b8b8b8;
 }
 
 .popup__agreement {

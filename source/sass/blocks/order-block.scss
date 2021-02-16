@@ -1,4 +1,6 @@
 .order-block {
+  @include center-block;
+
   padding-top: 136px;
   padding-left: 136px;
   padding-right: 150px;
@@ -10,7 +12,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image:  linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 55%, #1A140D 106.79%);
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 55%, #1a140d 106.79%);
 
     min-height: 100vh;
 
@@ -58,7 +60,6 @@
     &:first-of-type {
       display: none;
     }
-
   }
 }
 
@@ -98,7 +99,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: $white;
 
   @media (max-width: $tablet-width) {
@@ -125,7 +126,7 @@
 
   color: $white;
 
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   & span {
     display: block;
@@ -162,6 +163,7 @@
 
   @media (max-width: $mobile-width) {
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 32px;
   }
 }

@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Квесты в Новосибирскe выбор города">
-  <title>Escape room</title>
+  <meta name="description" content="Квесты в Новосибирскe задать вопрос">
+  <title>Задать вопрос</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/raleway-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-medium-500.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-semiBold-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-semi-bold-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-bold-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-extrabold-800.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-extra-bold-800.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
           <button class="header__toggle" type="button"><span>меню</span></button>
           <nav class="header__site-nav site-nav">
             <ul class="site-nav__list">
-              <li class="site-nav__item"><a href="#" class="site-nav__link">КВЕСТЫ</a></li>
+              <li class="site-nav__item"><a href="quests.html" class="site-nav__link">КВЕСТЫ</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">НОВИЧКАМ</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">ОТЗЫВЫ</a></li>
               <li class="site-nav__item"><a href="#" class="site-nav__link">АКЦИИ</a></li>
@@ -46,7 +46,7 @@
             </ul>
           </nav>
           <div class="header__contacts">
-            <a href="#" class="header__link header__link--city">
+            <a href="popup-city.html" class="header__link header__link--city">
               <svg class="header__icon" width="16" height="21">
                 <use xlink:href="#pin-icon"></use>
               </svg>
@@ -77,7 +77,7 @@
           </fieldset>
           <button class="popup__button button button--white" type="submit" tabindex="4">Отправить вопрос</button>
           <div class="popup__agreement agreement">
-            <input type="checkbox" name="agreement" id="agreement" tabindex="5" checked="" required>
+            <input type="checkbox" name="agreement" id="agreement" tabindex="5" required>
             <label class="agreement__label" for="agreement">Я согласен с
               <span>правилами обработки персональных данных</span> и пользовательским соглашением</label>
           </div>
@@ -90,19 +90,13 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <span class="visually-hidden">Ссылка на Инстаграм</span>
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="28" height="28">
-                  <use xlink:href="#instagram-icon"></use>
-                </svg>
+              <a href="#" class="social__link social__link--insta">
+                <span class="visually-hidden">Ссылка на Инстаграм</span>
               </a>
             </li>
             <li class="social__item">
-              <span class="visually-hidden">Ссылка на ВКонтакте</span>
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="28" height="28">
-                  <use xlink:href="#vk-icon"></use>
-                </svg>
+              <a href="#" class="social__link social__link--vk">
+                <span class="visually-hidden">Ссылка на ВКонтакте</span>
               </a>
             </li>
           </ul>
@@ -113,5 +107,4 @@
   </div>
   <script src="js/main.js"></script>
 </body>
-
 </html>

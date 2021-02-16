@@ -20,7 +20,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: wrap;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -56,7 +55,7 @@
   color: $link-white;
   text-decoration: none;
   text-transform: uppercase;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   @media (max-width: $mobile-width) {
     font-size: 16px;

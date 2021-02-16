@@ -1,3 +1,6 @@
+/*  eslint no-var: "error"  */
+/*  eslint-env es6  */
+
 'use strict';
 
 (function () {
@@ -22,7 +25,7 @@
 
     if (ERROR_INPUT_MSG.classList.contains('fieldset__input-error--show')) {
       ERROR_INPUT_MSG.classList.remove('fieldset__input-error--show');
-    };
+    }
 
     if (CONTAINER.classList.contains('container--opened')) {
       window.menu.close();
@@ -52,11 +55,11 @@
     }
 
     if (EMAIL.value.length > 0) {
-      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill');
     }
 
     if (USER_NAME.value.length > 0) {
-      LABEL_NAME.classList.add('fieldset__label-name--fill')
+      LABEL_NAME.classList.add('fieldset__label-name--fill');
     }
   };
 
@@ -80,7 +83,7 @@
       closePopup();
       document.removeEventListener('keydown', onEscPress);
     }
-  }
+  };
 
   EMAIL.addEventListener('input', function () {
     ERROR_INPUT_MSG.classList.add('fieldset__input-error--show');
@@ -92,17 +95,17 @@
 
   USER_NAME.addEventListener('input', function () {
     if (USER_NAME.value.length > 0) {
-      LABEL_NAME.classList.add('fieldset__label-name--fill')
+      LABEL_NAME.classList.add('fieldset__label-name--fill');
     } else {
-      LABEL_NAME.classList.remove('fieldset__label-name--fill')
+      LABEL_NAME.classList.remove('fieldset__label-name--fill');
     }
   });
 
   EMAIL.addEventListener('input', function () {
     if (EMAIL.value.length > 0) {
-      LABEL_EMAIL.classList.add('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.add('fieldset__label-email--fill');
     } else {
-      LABEL_EMAIL.classList.remove('fieldset__label-email--fill')
+      LABEL_EMAIL.classList.remove('fieldset__label-email--fill');
     }
   });
 

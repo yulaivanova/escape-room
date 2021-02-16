@@ -47,13 +47,13 @@
   &:last-child {
     border-right: none;
   }
-  
+
   &:hover {
     opacity: 0.6;
   }
 
   &:focus {
-    opacity: 0.4;
+    opacity: 0.6;
     outline: none;
   }
 
@@ -71,7 +71,7 @@
   display: block;
   line-height: 26px;
 
-  border-bottom: 2px solid #F2890F;;
+  border-bottom: 2px solid $orange;
 }
 
 .filter__icon {
