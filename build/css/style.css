@@ -1824,19 +1824,20 @@ template {
 .quests__quantity::before {
   width: 13px;
   height: 16px;
+  left: 2px;
   background-image: url("../img/person-icon.svg"); }
 
 .quests__address::before {
-  width: 14px;
-  height: 16px;
-  top: 1px;
-  left: 2px;
+  width: 11px;
+  height: 14px;
+  top: 2px;
+  left: 3px;
   background-image: url("../img/pin-icon.svg"); }
 
 .quests__level::before {
   width: 16px;
   height: 16px;
-  left: 12px;
+  left: 14px;
   background-image: url("../img/puzzle-icon.svg"); }
 
 .filter__list {
