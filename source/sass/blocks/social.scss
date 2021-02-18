@@ -22,6 +22,7 @@
   display: block;
   width: 28px;
   height: 28px;
+
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -34,7 +35,8 @@
 .social__link--insta {
   background-image: url("../img/instagram-icon.svg");
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-image: url("../img/instagram-hover.svg");
   }
 }
@@ -42,7 +44,8 @@
 .social__link--vk {
   background-image: url("../img/vk-icon.svg");
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-image: url("../img/vk-hover.svg");
   }
 }

@@ -19,7 +19,8 @@
 
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }
@@ -27,11 +28,12 @@
 .link--breadcrumb::before {
   content: "";
   position: absolute;
-  background-image: url("../img/arrow-icon.svg");
   left: 0;
   top: 4px;
   width: 6px;
   height: 10px;
+
+  background-image: url("../img/arrow-icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,7 +48,8 @@
 
   border-bottom: 2px solid $orange;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }
@@ -55,8 +58,9 @@
   content: "";
   position: absolute;
   right: -4px;
+  transform: rotate(270deg);
+
   bottom: calc(50% - 6px);
   border: 4px solid transparent;
   border-top: 5px solid $white;
-  transform: rotate(270deg);
 }
