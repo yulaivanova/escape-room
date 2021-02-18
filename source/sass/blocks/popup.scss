@@ -14,7 +14,7 @@
 
 .popup__form .popup__wrapper {
   min-height: 682px;
-  overflow: auto;
+
   padding-bottom: 12px;
 }
 
@@ -23,17 +23,20 @@
   display: block;
 
   max-width: 1461px;
-  margin: 0 auto;
   background-color: none;
+
+  margin: 0 auto;
   padding-bottom: 100px;
 }
 
 .popup--nojs .popup__wrapper {
   position: static;
-  margin: 100px auto 0;
   display: block;
   top: 0;
   transform: none;
+
+  margin: 100px auto 0;
+
   background-color: none;
 
   @media (max-width: $mobile-width) {
@@ -57,15 +60,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 50;
 
   overflow-y: scroll;
-
 
   box-sizing: border-box;
 
   padding: 32px 32px 10px;
 
-  z-index: 50;
   background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
 
@@ -114,19 +116,21 @@
 
 .popup__gps-link {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+
   padding-left: 32px;
+
   font-size: 17px;
   line-height: 27px;
   color: $text-white;
   text-decoration: none;
   letter-spacing: -0.01em;
 
-  display: inline-block;
-  vertical-align: top;
-
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
@@ -145,10 +149,12 @@
     position: absolute;
     bottom: 2px;
     right: 3px;
-    opacity: 0.5;
+
     width: calc(100% - 36px);
     height: 1px;
+
     background-color: $white;
+    opacity: 0.5;
   }
 }
 
@@ -156,10 +162,10 @@
   position: absolute;
   top: 35px;
   right: 28px;
-
   display: block;
   width: 25px;
   height: 25px;
+
   background: none;
   cursor: pointer;
   border: none;
@@ -171,12 +177,12 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 10px;
     right: 3px;
     width: 18px;
     height: 2px;
+
     background-color: $white;
     opacity: 0.5;
   }
@@ -191,7 +197,9 @@
 }
 
 .popup__toggle:hover::before,
-.popup__toggle:hover::after {
+.popup__toggle:hover::after,
+.popup__toggle:focus::before,
+.popup__toggle:focus::after {
   opacity: 1;
 }
 
@@ -212,18 +220,19 @@
   font-size: 24px;
   line-height: 29px;
   font-feature-settings: "pnum" on, "lnum" on;
+  text-decoration: none;
 
   opacity: 0.32;
 
   color: $white;
 
-  text-decoration: none;
   position: relative;
 
   display: inline-block;
   vertical-align: top;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 }
@@ -244,8 +253,10 @@
 
 .popup__button {
   width: 219px;
+
   padding: 15px 0 16px;
   margin: 3px auto 22px;
+
   background-color: #b8b8b8;
 }
 

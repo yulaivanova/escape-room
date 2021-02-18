@@ -16,9 +16,6 @@
 </head>
 
 <body>
-  <div style="display: none;">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
   <div class="container container--maniac container--opened container--nojs">
     <header class="header">
       <div class="header__inner">
@@ -38,17 +35,17 @@
           <button class="header__toggle" type="button"><span>меню</span></button>
           <nav class="header__site-nav site-nav">
             <ul class="site-nav__list">
-              <li class="site-nav__item"><a href="quests.html" class="site-nav__link site-nav__link--active">КВЕСТЫ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">НОВИЧКАМ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">ОТЗЫВЫ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">АКЦИИ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">КОНТАКТЫ</a></li>
+              <li class="site-nav__item"><a href="quests.html" class="site-nav__link site-nav__link--active">квесты</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">новичкам</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">отзывы</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">акции</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">контакты</a></li>
             </ul>
           </nav>
           <div class="header__contacts">
             <a href="popup-city.html" class="header__link header__link--city">
               <svg class="header__icon" width="16" height="21">
-                <use xlink:href="#pin-icon"></use>
+                <use xlink:href="img/sprite_auto.svg#pin-icon"></use>
               </svg>
               <span>НОВОСИБИРСК</span>
             </a>
@@ -63,24 +60,24 @@
       <section class="quest-block quest-block--maniac">
         <div class="quest-block__inner">
           <a href="quests.html" class="quest-block__link link link--breadcrumb">ВСЕ КВЕСТЫ</a>
-          <h2>хоррор, триллер</h2>
           <h1>МАНЬЯК</h1>
+          <h2>хоррор, триллер</h2>
           <ul class="quest-block__desc-list">
             <li class="quest-block__desk-item">
               <svg class="quest-block__icon" width="24" height="24">
-                <use xlink:href="#clock-icon"></use>
+                <use xlink:href="img/sprite_auto.svg#clock-icon"></use>
               </svg>
               60 мин
             </li>
             <li class="quest-block__desk-item">
               <svg class="quest-block__icon" width="29" height="24">
-                <use xlink:href="#person-icon"></use>
+                <use xlink:href="img/sprite_auto.svg#person-icon"></use>
               </svg>
               3–4 чел
             </li>
             <li class="quest-block__desk-item">
               <svg class="quest-block__icon" width="24" height="24">
-                <use xlink:href="#puzzle-icon"></use>
+                <use xlink:href="img/sprite_auto.svg#puzzle-icon"></use>
               </svg>
               средняя сложность
             </li>
@@ -113,26 +110,31 @@
     </section>
 
     <section class="popup popup__form">
-      <div class="popup__wrapper popup__wrapper--form">
-        <button class="popup__toggle" type="button" tabindex="6"><span class="visually-hidden">Закрыть
-            окно</span></button>
+      <div class="popup__wrapper">
+        <button class="popup__toggle" type="button" tabindex="6"><span class="visually-hidden">Закрыть окно</span></button>
         <h2>Задайте вопрос</h2>
         <form action="#">
           <fieldset class="popup__fieldset fieldset">
-            <label for="name" class="fieldset__label-name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-            <input type="text" name="name" placeholder="Имя" minlength="2" id="name" tabindex="1" required>
-            <label for="email" class="fieldset__label-email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
-            <input type="email" name="email" placeholder="Email" minlength="3" id="email" tabindex="2"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-            <span class="fieldset__input-error">Введён некорректный e-mail, попробуйте заново</span>
-            <label for="question">Ваш вопрос:</label>
-            <textarea id="question" rows="6" placeholder="Начните вводить ..." tabindex="3"></textarea>
+            <div class="fieldset__field">
+              <label for="name" class="fieldset__label-name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+              <input type="text" name="name" placeholder="Имя" minlength="2" id="name" tabindex="1" required>
+            </div>
+            <div class="fieldset__field">
+              <label for="email" class="fieldset__label-email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+              <input type="email" name="email" placeholder="Email" minlength="3" id="email" tabindex="2"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <span class="fieldset__input-error">Введён некорректный e-mail, попробуйте заново</span>
+            </div>
+            <div class="fieldset__field">
+              <label for="question">Ваш вопрос:</label>
+              <textarea id="question" rows="6" placeholder="Начните вводить ..." tabindex="3"></textarea>
+            </div>
           </fieldset>
           <button class="popup__button button button--white" type="submit" tabindex="4">Отправить вопрос</button>
           <div class="popup__agreement agreement">
             <input type="checkbox" name="agreement" id="agreement" tabindex="5" required>
-            <label class="agreement__label" for="agreement">Я согласен с
-              <span>правилами обработки персональных данных</span> и пользовательским соглашением</label>
+            <label class="agreement__label" for="agreement">Я согласен с <span>правилами обработки персональных данных</span>
+              и пользовательским соглашением</label>
           </div>
         </form>
       </div>

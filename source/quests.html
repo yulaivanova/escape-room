@@ -16,11 +16,8 @@
 </head>
 
 <body>
-  <div style="display: none;">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
   <div class="container container--quests container--opened container--nojs">
-    <header class="header">
+    <header class="header header--catalog">
       <div class="header__inner">
         <a href="index.html" class="header__logo">
           <!-- 1х: 134px; 2x: 268px -->
@@ -38,17 +35,17 @@
           <button class="header__toggle" type="button"><span>меню</span></button>
           <nav class="header__site-nav site-nav">
             <ul class="site-nav__list">
-              <li class="site-nav__item"><a class="site-nav__link site-nav__link--active">КВЕСТЫ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">НОВИЧКАМ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">ОТЗЫВЫ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">АКЦИИ</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">КОНТАКТЫ</a></li>
+              <li class="site-nav__item"><a class="site-nav__link site-nav__link--active">квесты</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">новичкам</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">отзывы</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">акции</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">контакты</a></li>
             </ul>
           </nav>
           <div class="header__contacts">
             <a href="popup-city.html" class="header__link header__link--city">
               <svg class="header__icon" width="16" height="21">
-                <use xlink:href="#pin-icon"></use>
+                <use xlink:href="img/sprite_auto.svg#pin-icon"></use>
               </svg>
               <span>НОВОСИБИРСК</span>
             </a>
@@ -60,157 +57,161 @@
       </div>
     </header>
     <main>
-      <section class="quests">
-        <h1>квесты в Новосибирске</h1>
-        <h2>Выберите тематику</h2>
-        <div class="quests__filter filter">
-          <ul class="filter__list">
-            <li class="filter__item filter__item--active" tabindex="0" data-tab-name="quests">
-              <svg class="filter__icon filter__icon--all-quests" width="33" height="30">
-                <use xlink:href="#all-quests-icon"></use>
-              </svg>
-              <span>Все квесты</span>
-            </li>
-            <li class="filter__item" tabindex="0" data-tab-name="map">
-              <svg class="filter__icon filter__icon--map" width="36" height="30">
-                <use xlink:href="#map-icon"></use>
-              </svg>
-              <span>Приключения</span>
-            </li>
-            <li class="filter__item" tabindex="0" data-tab-name="scary">
-              <svg class="filter__icon filter__icon--scary" width="30" height="30">
-                <use xlink:href="#scary-icon"></use>
-              </svg>
-              <span>Ужасы</span>
-            </li>
-            <li class="filter__item" tabindex="0" data-tab-name="mystic">
-              <svg class="filter__icon filter__icon--mystic" width="30" height="30">
-                <use xlink:href="#mystic-icon"></use>
-              </svg>
-              <span>Мистика</span>
-            </li>
-            <li class="filter__item" tabindex="0" data-tab-name="detective">
-              <svg class="filter__icon filter__icon--detective" width="40" height="30">
-                <use xlink:href="#detective-icon"></use>
-              </svg>
-              <span>Детектив</span>
-            </li>
-            <li class="filter__item" tabindex="0" data-tab-name="atom">
-              <svg class="filter__icon filter__icon--atom" width="28" height="30">
-                <use xlink:href="#atom-icon"></use>
-              </svg>
-              <span>Sci-fi</span>
-            </li>
-          </ul>
+      <section class="catalog">
+        <div class="catalog__header">
+          <div class="catalog__inner">
+            <h1>квесты в Новосибирске</h1>
+            <h2>Выберите тематику</h2>
+            <div class="catalog__filter filter">
+              <ul class="filter__list">
+                <li class="filter__item filter__item--active" tabindex="0" data-tab-name="quests">
+                  <svg class="filter__icon filter__icon--all-quests" width="33" height="30">
+                    <use xlink:href="img/sprite_auto.svg#all-quests-icon"></use>
+                  </svg>
+                  <span>Все квесты</span>
+                </li>
+                <li class="filter__item" tabindex="0" data-tab-name="map">
+                  <svg class="filter__icon filter__icon--map" width="36" height="30">
+                    <use xlink:href="img/sprite_auto.svg#map-icon"></use>
+                  </svg>
+                  <span>Приключения</span>
+                </li>
+                <li class="filter__item" tabindex="0" data-tab-name="scary">
+                  <svg class="filter__icon filter__icon--scary" width="30" height="30">
+                    <use xlink:href="img/sprite_auto.svg#scary-icon"></use>
+                  </svg>
+                  <span>Ужасы</span>
+                </li>
+                <li class="filter__item" tabindex="0" data-tab-name="mystic">
+                  <svg class="filter__icon filter__icon--mystic" width="30" height="30">
+                    <use xlink:href="img/sprite_auto.svg#mystic-icon"></use>
+                  </svg>
+                  <span>Мистика</span>
+                </li>
+                <li class="filter__item" tabindex="0" data-tab-name="detective">
+                  <svg class="filter__icon filter__icon--detective" width="40" height="30">
+                    <use xlink:href="img/sprite_auto.svg#detective-icon"></use>
+                  </svg>
+                  <span>Детектив</span>
+                </li>
+                <li class="filter__item" tabindex="0" data-tab-name="atom">
+                  <svg class="filter__icon filter__icon--atom" width="28" height="30">
+                    <use xlink:href="img/sprite_auto.svg#atom-icon"></use>
+                  </svg>
+                  <span>Sci-fi</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="quests__list">
-          <li class="quests__item quests__item--hit">
-            <a href="#" class="quests__link quests__link--crypt">
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--hit">
+            <a href="#" class="catalog__link catalog__link--crypt">
               <h3>Склеп</h3>
-              <p class="quests__address">пр. Ленина, 37</p>
-              <div class="quests__description">
-                <p class="quests__quantity">2–5 чел</p>
-                <p class="quests__level">сложный</p>
+              <p class="catalog__address">пр. Ленина, 37</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">2–5 чел</p>
+                <p class="catalog__level">сложный</p>
               </div>
             </a>
           </li>
-          <li class="quests__item quests__item--hit">
-            <a href="quest-maniac.html" class="quests__link quests__link--maniac">
+          <li class="catalog__item catalog__item--hit">
+            <a href="quest-maniac.html" class="catalog__link catalog__link--maniac">
               <h3>Маньяк</h3>
-              <p class="quests__address">Верхнетецкая, 32</p>
-              <div class="quests__description">
-                <p class="quests__quantity">3–6 чел</p>
-                <p class="quests__level">средний</p>
+              <p class="catalog__address">Верхнетецкая, 32</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">3–6 чел</p>
+                <p class="catalog__level">средний</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="quest-ritual.html" class="quests__link quests__link--ritual">
+          <li class="catalog__item">
+            <a href="quest-ritual.html" class="catalog__link catalog__link--ritual">
               <h3>Ритуал</h3>
-              <p class="quests__address">пр. Ленина, 37</p>
-              <div class="quests__description">
-                <p class="quests__quantity">3–5 чел</p>
-                <p class="quests__level">легкий</p>
+              <p class="catalog__address">пр. Ленина, 37</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">3–5 чел</p>
+                <p class="catalog__level">легкий</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="#" class="quests__link quests__link--history">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link catalog__link--history">
               <h3>История призраков</h3>
-              <p class="quests__address">Новослободская, 2а</p>
-              <div class="quests__description">
-                <p class="quests__quantity">5–6 чел</p>
-                <p class="quests__level">легкий</p>
+              <p class="catalog__address">Новослободская, 2а</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">5–6 чел</p>
+                <p class="catalog__level">легкий</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="quest-mystic.html" class="quests__link quests__link--mystery">
+          <li class="catalog__item">
+            <a href="quest-mystic.html" class="catalog__link catalog__link--mystery">
               <h3>Тайны старого особняка</h3>
-              <p class="quests__address">пр. Ленина, 37</p>
-              <div class="quests__description">
-                <p class="quests__quantity">2–5 чел</p>
-                <p class="quests__level">легкий</p>
+              <p class="catalog__address">пр. Ленина, 37</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">2–5 чел</p>
+                <p class="catalog__level">легкий</p>
               </div>
             </a>
           </li>
-          <li class="quests__item quests__item--hit">
-            <a href="#" class="quests__link quests__link--hut">
+          <li class="catalog__item catalog__item--hit">
+            <a href="#" class="catalog__link catalog__link--hut">
               <h3>Хижина в лесу</h3>
-              <p class="quests__address">Верхнетецкая, 32</p>
-              <div class="quests__description">
-                <p class="quests__quantity">4–7 чел</p>
-                <p class="quests__level">средний</p>
+              <p class="catalog__address">Верхнетецкая, 32</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">4–7 чел</p>
+                <p class="catalog__level">средний</p>
               </div>
             </a>
           </li>
-          <li class="quests__item quests__item--hit">
-            <a href="quest-experiment.html" class="quests__link quests__link--experiment">
+          <li class="catalog__item catalog__item--hit">
+            <a href="quest-experiment.html" class="catalog__link catalog__link--experiment">
               <h3>Фатальный эксперимент</h3>
-              <p class="quests__address">Верхнетецкая, 32</p>
-              <div class="quests__description">
-                <p class="quests__quantity">5–8 чел</p>
-                <p class="quests__level">сложный</p>
+              <p class="catalog__address">Верхнетецкая, 32</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">5–8 чел</p>
+                <p class="catalog__level">сложный</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="#" class="quests__link quests__link--metro">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link catalog__link--metro">
               <h3>Метро 2033</h3>
-              <p class="quests__address">Новослободская, 2а</p>
-              <div class="quests__description">
-                <p class="quests__quantity">6 –8 чел</p>
-                <p class="quests__level">средний</p>
+              <p class="catalog__address">Новослободская, 2а</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">6 –8 чел</p>
+                <p class="catalog__level">средний</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="#" class="quests__link quests__link--attic">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link catalog__link--attic">
               <h3>Старый чердак</h3>
-              <p class="quests__address">Верхнетецкая, 32</p>
-              <div class="quests__description">
-                <p class="quests__quantity">2–3 чел</p>
-                <p class="quests__level">легкий</p>
+              <p class="catalog__address">Верхнетецкая, 32</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">2–3 чел</p>
+                <p class="catalog__level">легкий</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="#" class="quests__link quests__link--frontier">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link catalog__link--frontier">
               <h3>Последний рубеж</h3>
-              <p class="quests__address">Верхнетецкая, 32</p>
-              <div class="quests__description">
-                <p class="quests__quantity">4–7 чел</p>
-                <p class="quests__level">средний</p>
+              <p class="catalog__address">Верхнетецкая, 32</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">4–7 чел</p>
+                <p class="catalog__level">средний</p>
               </div>
             </a>
           </li>
-          <li class="quests__item">
-            <a href="#" class="quests__link quests__link--mars">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link catalog__link--mars">
               <h3>Марс-2056</h3>
-              <p class="quests__address">пр. Ленина, 37</p>
-              <div class="quests__description">
-                <p class="quests__quantity">2–4 чел</p>
-                <p class="quests__level">легкий</p>
+              <p class="catalog__address">пр. Ленина, 37</p>
+              <div class="catalog__description">
+                <p class="catalog__quantity">2–4 чел</p>
+                <p class="catalog__level">легкий</p>
               </div>
             </a>
           </li>
@@ -237,26 +238,31 @@
     </section>
 
     <section class="popup popup__form">
-      <div class="popup__wrapper popup__wrapper--form">
-        <button class="popup__toggle" type="button" tabindex="6"><span class="visually-hidden">Закрыть
-            окно</span></button>
+      <div class="popup__wrapper">
+        <button class="popup__toggle" type="button" tabindex="6"><span class="visually-hidden">Закрыть окно</span></button>
         <h2>Задайте вопрос</h2>
         <form action="#">
           <fieldset class="popup__fieldset fieldset">
-            <label for="name" class="fieldset__label-name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-            <input type="text" name="name" placeholder="Имя" minlength="2" id="name" tabindex="1" required>
-            <label for="email" class="fieldset__label-email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
-            <input type="email" name="email" placeholder="Email" minlength="3" id="email" tabindex="2"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-            <span class="fieldset__input-error">Введён некорректный e-mail, попробуйте заново</span>
-            <label for="question">Ваш вопрос:</label>
-            <textarea id="question" rows="6" placeholder="Начните вводить ..." tabindex="3"></textarea>
+            <div class="fieldset__field">
+              <label for="name" class="fieldset__label-name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+              <input type="text" name="name" placeholder="Имя" minlength="2" id="name" tabindex="1" required>
+            </div>
+            <div class="fieldset__field">
+              <label for="email" class="fieldset__label-email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+              <input type="email" name="email" placeholder="Email" minlength="3" id="email" tabindex="2"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <span class="fieldset__input-error">Введён некорректный e-mail, попробуйте заново</span>
+            </div>
+            <div class="fieldset__field">
+              <label for="question">Ваш вопрос:</label>
+              <textarea id="question" rows="6" placeholder="Начните вводить ..." tabindex="3"></textarea>
+            </div>
           </fieldset>
           <button class="popup__button button button--white" type="submit" tabindex="4">Отправить вопрос</button>
           <div class="popup__agreement agreement">
-            <input type="checkbox" name="agreement" id="agreement" tabindex="5" checked="" required>
-            <label class="agreement__label" for="agreement">Я согласен с
-              <span>правилами обработки персональных данных</span> и пользовательским соглашением</label>
+            <input type="checkbox" name="agreement" id="agreement" tabindex="5" required>
+            <label class="agreement__label" for="agreement">Я согласен с <span>правилами обработки персональных данных</span>
+              и пользовательским соглашением</label>
           </div>
         </form>
       </div>

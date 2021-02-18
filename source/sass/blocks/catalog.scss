@@ -1,6 +1,6 @@
-.quests {
+.catalog {
   @include center-block;
-  padding-top: 120px;
+  padding-top: 0;
   padding-left: 137px;
   padding-right: 150px;
 
@@ -16,7 +16,40 @@
   }
 }
 
-.quests h1 {
+.catalog__header {
+  position: fixed;
+  z-index: 50;
+  top: 71px;
+  left: 0;
+  width: 100%;
+
+  background-color: #1d1b1b;
+
+  @media (max-width: $tablet-width) {
+    top: 63px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 55px;
+  }
+}
+
+.catalog__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 150px 0 136px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 132px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 16px;
+  }
+}
+
+.catalog h1 {
   color: $orange;
   font-weight: 500;
   line-height: 20px;
@@ -24,9 +57,14 @@
 
   margin: 0;
   padding-bottom: 10px;
+  padding-top: 48px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 32px;
+  }
 }
 
-.quests h2 {
+.catalog h2 {
   font-weight: 800;
   font-size: 64px;
   line-height: 70px;
@@ -43,12 +81,13 @@
   @media (max-width: $mobile-width) {
     font-size: 36px;
     line-height: 40px;
+
     padding-right: 100px;
     padding-bottom: 40px;
   }
 }
 
-.quests__filter {
+.catalog__filter {
   margin-bottom: 39px;
 
   @media (max-width: $mobile-width) {
@@ -56,7 +95,7 @@
   }
 }
 
-.quests__list {
+.catalog__list {
   @include list-reset;
 
   max-width: 1080px;
@@ -65,7 +104,9 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
   row-gap: 32px;
+
   padding-bottom: 32px;
+  padding-top: 346px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -73,17 +114,19 @@
 
   @media (max-width: $mobile-width) {
     grid-template-columns: 1fr;
-    margin-right: 16px;
     row-gap: 16px;
+
+    margin-right: 16px;
     padding-bottom: 16px;
+    padding-top: 223px;
   }
 }
 
-.quests__item {
+.catalog__item {
   position: relative;
 }
 
-.quests__item--hit::before {
+.catalog__item--hit::before {
   content: "Хит";
   position: absolute;
   display: block;
@@ -91,9 +134,12 @@
   width: 67px;
   top: 16px;
   right: 18px;
+
   border: 2px solid rgba(242, 137, 15, 0.74);
   border-radius: 25px;
+
   padding: 3px 12px 3px 0;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
@@ -105,13 +151,14 @@
   }
 }
 
-.quests__item--hit::after {
+.catalog__item--hit::after {
   content: "";
   position: absolute;
   top: 21px;
   right: 56px;
   width: 16px;
   height: 16px;
+
   background-image: url("../img/star-icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,7 +168,7 @@
   }
 }
 
-.quests__link {
+.catalog__link {
   width: 100%;
   min-height: 232px;
   box-sizing: border-box;
@@ -148,7 +195,7 @@
   }
 }
 
-.quests__link--crypt {
+.catalog__link--crypt {
   background-image: url("../img/quest-1@1x.jpg");
 
   &.webp {
@@ -164,7 +211,7 @@
   }
 }
 
-.quests__link--maniac {
+.catalog__link--maniac {
   background-image: url("../img/quest-2@1x.jpg");
 
   &.webp {
@@ -180,7 +227,7 @@
   }
 }
 
-.quests__link--ritual {
+.catalog__link--ritual {
   background-image: url("../img/quest-3@1x.jpg");
 
   &.webp {
@@ -196,7 +243,7 @@
   }
 }
 
-.quests__link--history {
+.catalog__link--history {
   background-image: url("../img/quest-4@1x.jpg");
 
   &.webp {
@@ -212,7 +259,7 @@
   }
 }
 
-.quests__link--mystery {
+.catalog__link--mystery {
   background-image: url("../img/quest-5@1x.jpg");
 
   &.webp {
@@ -228,7 +275,7 @@
   }
 }
 
-.quests__link--hut {
+.catalog__link--hut {
   background-image: url("../img/quest-6@1x.jpg");
   background-position-y: 3px;
 
@@ -245,7 +292,7 @@
   }
 }
 
-.quests__link--experiment {
+.catalog__link--experiment {
   background-image: url("../img/quest-7@1x.jpg");
 
   &.webp {
@@ -261,7 +308,7 @@
   }
 }
 
-.quests__link--metro {
+.catalog__link--metro {
   background-image: url("../img/quest-8@1x.jpg");
 
   &.webp {
@@ -277,7 +324,7 @@
   }
 }
 
-.quests__link--attic {
+.catalog__link--attic {
   background-image: url("../img/quest-9@1x.jpg");
 
   &.webp {
@@ -293,7 +340,7 @@
   }
 }
 
-.quests__link--frontier {
+.catalog__link--frontier {
   background-image: url("../img/quest-10@1x.jpg");
   background-position-x: -3px;
 
@@ -310,7 +357,7 @@
   }
 }
 
-.quests__link--mars {
+.catalog__link--mars {
   background-image: url("../img/quest-11@1x.jpg");
 
   &.webp {
@@ -326,7 +373,7 @@
   }
 }
 
-.quests__link h3 {
+.catalog__link h3 {
   font-size: 24px;
   line-height: 29px;
   color: $white;
@@ -335,67 +382,73 @@
   padding-bottom: 10px;
 }
 
-.quests__link p {
+.catalog__link p {
   font-weight: 500;
   font-size: 13px;
   line-height: 19px;
-  margin: 0;
   color: rgba(229, 229, 229, 0.8);
+
+  margin: 0;
 
   position: relative;
 }
 
-.quests__description {
+.catalog__description {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   align-items: center;
+
   margin-top: 6px;
 }
 
-.quests__quantity {
+.catalog__quantity {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
+
   padding-right: 10px;
   padding-left: 21px;
 }
 
-.quests__level {
+.catalog__level {
   padding-left: 36px;
 }
 
-.quests__address {
+.catalog__address {
   padding-left: 21px;
 }
 
-.quests__quantity::before,
-.quests__level::before,
-.quests__address::before {
+.catalog__quantity::before,
+.catalog__level::before,
+.catalog__address::before {
   content: "";
   position: absolute;
   left: 0;
+
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.quests__quantity::before {
+.catalog__quantity::before {
   width: 13px;
   height: 16px;
   left: 2px;
+
   background-image: url("../img/person-icon.svg");
 }
 
-.quests__address::before {
+.catalog__address::before {
   width: 11px;
   height: 14px;
   top: 2px;
   left: 3px;
+
   background-image: url("../img/pin-icon.svg");
 }
 
-.quests__level::before {
+.catalog__level::before {
   width: 16px;
   height: 16px;
   left: 14px;
+
   background-image: url("../img/puzzle-icon.svg");
 }

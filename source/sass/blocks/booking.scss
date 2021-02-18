@@ -27,11 +27,10 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 40px;
+  color: $white;
 
   display: flex;
   align-items: center;
-
-  color: $white;
 
   margin: 0;
 }
@@ -40,6 +39,7 @@
   display: inline-block;
   width: 120px;
   vertical-align: bottom;
+
   margin-right: 24px;
   margin-top: 4px;
 
@@ -53,11 +53,12 @@
   @include list-reset;
   display: flex;
   flex-direction: row;
+
   padding-bottom: 48px;
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 38px;
     flex-wrap: wrap;
+    padding-bottom: 38px;
   }
 }
 
@@ -71,7 +72,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
-
   font-feature-settings: "pnum" on, "lnum" on;
 
   color: rgba(255, 255, 255, 0.82);
@@ -93,6 +93,7 @@
   width: 15px;
   height: 15px;
   box-sizing: border-box;
+
   border-radius: 3px;
 }
 
@@ -148,7 +149,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-
   text-align: center;
   letter-spacing: 0.05em;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -160,17 +160,18 @@
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-
-  border: 2px solid #c4c4c4;
-  box-sizing: border-box;
-  border-radius: 65px;
   width: 110px;
   height: 38px;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+
+  border: 2px solid #c4c4c4;
+  border-radius: 65px;
 }
 
-.booking__item label:hover::before {
+.booking__item label:hover::before,
+.booking__item label:focus::before {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -183,9 +184,10 @@
   content: "";
   display: block;
   position: absolute;
+  z-index: -10;
+
   border: none;
   background-image: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
-  z-index: -10;
 }
 
 .booking__item input:checked + label {
@@ -197,9 +199,10 @@
   content: "";
   display: block;
   position: absolute;
+  z-index: -10;
+
   border: none;
   background-image: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
-  z-index: -10;
 }
 
 .booking__item input:disabled + label {

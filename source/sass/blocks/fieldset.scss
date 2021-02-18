@@ -16,8 +16,8 @@
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.02em;
-
   font-feature-settings: "pnum" on, "lnum" on;
+
   padding-bottom: 14px;
 
   position: relative;
@@ -42,12 +42,13 @@
 }
 
 .fieldset__input-error {
+  display: none;
+
   color: $orange;
+
   margin-top: -20px;
   padding-left: 24px;
   padding-bottom: 10px;
-
-  display: none;
 }
 
 .fieldset__input-error--show {
@@ -55,16 +56,18 @@
 }
 
 .fieldset label::before {
-  font-weight: 500;
-  font-size: 12px;
-  color: rgba(230, 230, 230, 0.64);
   position: absolute;
   bottom: -11px;
   left: 24px;
   display: block;
-  text-align: center;
-  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   z-index: 11;
+
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(230, 230, 230, 0.64);
+  text-align: center;
+
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
 
 .fieldset__label-name--fill::before {
@@ -80,12 +83,14 @@
 .fieldset textarea,
 .fieldset input {
   box-sizing: border-box;
-  margin-bottom: 30px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  line-height: 20px;
   border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  line-height: 20px;
   color: $white;
+
+  margin-bottom: 30px;
 
   &::placeholder {
     opacity: 0.64;
@@ -93,9 +98,10 @@
 }
 
 .fieldset textarea {
-  padding: 16px 24px;
-  resize: none;
   max-height: 120px;
+  padding: 16px 24px;
+
+  resize: none;
 }
 
 .fieldset input:hover,
@@ -103,4 +109,10 @@
 .fieldset textarea:hover,
 .fieldset textarea:focus {
   box-shadow: 0 0 0 1px #141414;
+}
+
+.fieldset__field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

@@ -23,6 +23,7 @@
 .order-block__inner {
   max-width: 1080px;
   box-sizing: border-box;
+
   padding-right: 0;
 
   display: grid;
@@ -39,8 +40,8 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-
   color: $orange;
+
   margin: 0;
   padding-bottom: 8px;
   padding-left: 6px;
@@ -54,8 +55,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 0;
     display: block;
+
+    padding-left: 0;
 
     &:first-of-type {
       display: none;
@@ -72,6 +74,8 @@
   margin: 0;
   padding-bottom: 12px;
 
+  order: 2;
+
   @media (max-width: $tablet-width) {
     font-size: 72px;
     line-height: 70px;
@@ -80,9 +84,15 @@
   @media (max-width: $mobile-width) {
     font-size: 42px;
     line-height: 46px;
-    padding-bottom: 14px;
     letter-spacing: 0.01em;
+
+    padding-bottom: 14px;
   }
+}
+
+.order-block__title {
+  display: flex;
+  flex-direction: column;
 }
 
 .order-block__booking {
@@ -92,10 +102,11 @@
 .order-block__order {
   display: flex;
   flex-direction: row;
-
   align-items: flex-end;
+
   padding-bottom: 19px;
   padding-left: 5px;
+
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -109,9 +120,10 @@
 
   @media (max-width: $mobile-width) {
     grid-row: 3/4;
-    margin-top: 38px;
     flex-direction: column;
     align-items: flex-start;
+
+    margin-top: 38px;
     padding-bottom: 0;
     padding-left: 0;
   }
@@ -120,12 +132,11 @@
 .order-block__order p {
   max-width: 164px;
   margin: 0;
+
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-
   color: $white;
-
   font-feature-settings: "pnum" on, "lnum" on;
 
   & span {
@@ -143,11 +154,12 @@
 }
 
 .order-block__pay-link {
-  margin-left: 98px;
   display: inline-block;
-  width: 139px;
-  margin-bottom: 4px;
   vertical-align: bottom;
+  width: 139px;
+
+  margin-bottom: 4px;
+  margin-left: 98px;
 
   @media (max-width: 1160px) {
     margin-left: 20px;
@@ -164,6 +176,7 @@
   @media (max-width: $mobile-width) {
     display: inline-block;
     vertical-align: middle;
+
     margin-bottom: 32px;
   }
 }

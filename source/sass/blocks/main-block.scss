@@ -15,29 +15,34 @@
 .main-block__inner {
   margin-left: 104px;
   max-width: 550px;
+
   padding-top: 70px;
   padding-bottom: 59px;
 
   @media (max-width: $mobile-width) {
     margin: 0 auto 64px;
-    text-align: center;
     padding-bottom: 0;
+
+    text-align: center;
   }
 }
 
 .main-block__button {
   width: 250px;
+
   padding: 22px 0 23px;
+
   font-size: 17px;
   line-height: 20px;
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
+    padding: 15px 0;
+
     width: 185px;
 
     font-size: 14px;
     line-height: 16px;
-    padding: 15px 0;
   }
 }
 
@@ -54,12 +59,14 @@
   @media (max-width: $tablet-width) {
     font-size: 50px;
     line-height: 55px;
+
     padding-bottom: 39px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 36px;
     line-height: 40px;
+
     padding-bottom: 35px;
     padding-left: 15px;
     padding-right: 15px;

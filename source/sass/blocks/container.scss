@@ -255,21 +255,45 @@
   .container--nojs footer {
     display: block;
     z-index: 99;
+    background-color: #1a140d;
+    padding-top: 20px;
   }
 
   .container--nojs main {
     display: block;
   }
 
+  .container--nojs .catalog__header {
+    position: static;
+    background-color: transparent;
+  }
+
+  .container--nojs .catalog {
+    padding-top: 0;
+  }
+
+  .container--nojs .catalog__list {
+    padding-top: 0;
+    margin-bottom: 90px;
+  }
+
+  .container--nojs .header--catalog {
+    padding-bottom: 20px;
+  }
+
   .container--nojs .quest-block {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position-y: -10px;
+
+    margin-bottom: 90px;
   }
 
   .container--nojs .main-block {
     min-height: auto;
     background-image: url("../img/main-bg-mobile@1x.jpg");
+
+    margin-bottom: 90px;
 
     &.webp {
       background-image: url("../img/main-bg-mobile@1x.webp");

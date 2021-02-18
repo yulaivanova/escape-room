@@ -9,18 +9,21 @@
 
   @media (max-width: $mobile-width) {
     justify-content: flex-start;
+
     background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 55%, #1a140d 106.79%);
   }
 }
 
 .quest-block__inner {
-  margin-left: auto;
-  margin-right: 54px;
   max-width: 680px;
   box-sizing: border-box;
-  padding-top: 100px;
-  padding-bottom: 124px;
-  padding-right: 125px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: 54px;
+  padding: 100px 125px 124px 0;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
@@ -41,6 +44,8 @@
   padding-bottom: 8px;
   padding-left: 7px;
 
+  order: 1;
+
   @media (max-width: $mobile-width) {
     padding-left: 0;
   }
@@ -59,6 +64,8 @@
   margin: 0;
   padding-bottom: 32px;
 
+  order: 2;
+
   @media (max-width: $tablet-width) {
     font-size: 72px;
     line-height: 65px;
@@ -67,8 +74,9 @@
   @media (max-width: $mobile-width) {
     font-size: 42px;
     line-height: 46px;
-    padding-bottom: 9px;
     letter-spacing: -0.01em;
+
+    padding-bottom: 9px;
   }
 }
 
@@ -78,6 +86,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  order: 3;
 
   padding-left: 32px;
   margin-bottom: 16px;
@@ -89,24 +98,23 @@
 }
 
 .quest-block__desk-item {
-  padding: 5px 23px;
-  border-right: 1px solid rgba(255, 255, 255, 0.36);
   display: flex;
   align-items: center;
 
   font-size: 14px;
   line-height: 20px;
-
   font-feature-settings: "pnum" on, "lnum" on;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+
+  padding: 5px 23px;
 
   &:nth-child(2n) {
     padding-right: 24px;
     padding-left: 18px;
 
     @media (max-width: $mobile-width) {
-      padding-left: 20px;
-      padding-right: 16px;
-      padding-bottom: 4px;
+      padding: 0 16px 4px 20px;
     }
   }
 
@@ -126,6 +134,7 @@
     @media (max-width: $mobile-width) {
       padding-left: 14px;
       padding-top: 10px;
+
       line-height: 17px;
     }
   }
@@ -133,7 +142,9 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     width: 33%;
+
     padding: 0;
+
     text-align: center;
   }
 }
@@ -151,25 +162,31 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-
   font-feature-settings: "pnum" on, "lnum" on;
 
   padding-left: 32px;
   padding-bottom: 45px;
   margin: 0;
 
+  order: 4;
+
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-bottom: 29px;
+
     letter-spacing: -0.02em;
   }
 }
 
 .quest-block__button {
   width: 250px;
+
   margin-left: 32px;
   padding: 23px 0;
+
   font-size: 17px;
+
+  order: 5;
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
@@ -182,6 +199,7 @@
   @media (max-width: $mobile-width) {
     display: inline-block;
     vertical-align: top;
+
     margin-bottom: 294px;
   }
 }
