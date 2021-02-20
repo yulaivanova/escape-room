@@ -34,6 +34,11 @@
     grid-template-columns: 1fr;
     column-gap: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    max-width: 328px;
+    margin: 0 auto;
+  }
 }
 
 .order-block__inner h2 {

@@ -17,6 +17,7 @@
   const ERROR_INPUT_MSG = document.querySelector('.fieldset__input-error');
   const LABEL_NAME = document.querySelector('.fieldset__label-name');
   const LABEL_EMAIL = document.querySelector('.fieldset__label-email');
+  const POPUP_GPS_LINK = document.querySelector('.popup__gps-link');
 
   const closePopup = function () {
     POPUP_CITY.classList.remove('popup__city-popup--opened');
@@ -34,6 +35,7 @@
 
   const openCityPopup = function () {
     POPUP_CITY.classList.add('popup__city-popup--opened');
+    POPUP_GPS_LINK.focus();
     document.body.style.overflow = 'hidden';
   };
 

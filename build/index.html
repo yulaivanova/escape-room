@@ -17,7 +17,7 @@
   <div class="container container--index container--opened container--nojs">
     <header class="header">
       <div class="header__inner">
-        <a class="header__logo" tabindex="0">
+        <a class="header__logo">
           <!-- 1х: 134px; 2x: 268px -->
           <picture>
             <source type="image/png" media="(max-width: 1023px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
@@ -30,21 +30,21 @@
           <button class="header__toggle" type="button"><span>меню</span></button>
           <nav class="header__site-nav site-nav">
             <ul class="site-nav__list">
-              <li class="site-nav__item"><a href="quests.html" class="site-nav__link" tabindex="0">квесты</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">новичкам</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">отзывы</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">акции</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">контакты</a></li>
+              <li class="site-nav__item"><a href="quests.html" class="site-nav__link">квесты</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">новичкам</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">отзывы</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">акции</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">контакты</a></li>
             </ul>
           </nav>
           <div class="header__contacts">
-            <a href="popup-city.html" class="header__link header__link--city" tabindex="0">
+            <a href="popup-city.html" class="header__link header__link--city">
               <svg class="header__icon" width="16" height="21">
                 <use xlink:href="img/sprite_auto.svg#pin-icon"></use>
               </svg>
               <span>НОВОСИБИРСК</span>
             </a>
-            <a class="header__link" href="tel:83832840160" tabindex="0">
+            <a class="header__link" href="tel:83832840160">
               <span>8 (383) 284 01 60</span>
             </a>
           </div>
@@ -62,7 +62,7 @@
       </section>
     </main>
 
-    <section class="popup popup__city-popup">
+    <section class="popup popup__city-popup" role="dialog">
       <div class="popup__wrapper">
         <button class="popup__toggle" type="button" tabindex="7"><span class="visually-hidden">Закрыть окно</span></button>
         <h2>Ваш город:</h2>
@@ -101,7 +101,7 @@
           <button class="popup__button button button--white" type="submit" tabindex="4">Отправить вопрос</button>
           <div class="popup__agreement agreement">
             <input type="checkbox" name="agreement" id="agreement" tabindex="5" required="">
-            <label class="agreement__label" for="agreement">Я согласен с <span>правилами обработки персональных данных</span> и пользовательским соглашением</label>
+            <label class="agreement__label" for="agreement">Я согласен с <a href="#" class="agreement__link">правилами обработки персональных данных</a> и пользовательским соглашением</label>
           </div>
         </form>
       </div>
