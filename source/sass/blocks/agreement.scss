@@ -64,6 +64,11 @@
   filter: none;
 }
 
-.agreement__label span {
+.agreement__link {
   text-decoration: underline;
+  color: $white;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
