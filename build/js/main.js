@@ -111,6 +111,8 @@
     }
   });
 
+
+
   FORM.addEventListener('submit', function (evt) {
     evt.preventDefault();
     if (window.storage.isSupport) {
