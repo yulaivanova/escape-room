@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Квесты в Новосибирскe выбор города">
+  <title>Выбор города</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/raleway-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-medium-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-semi-bold-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-bold-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-extra-bold-800.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container container--opened container--nojs">
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <!-- 1х: 134px; 2x: 268px -->
+          <picture>
+            <source type="image/png" media="(max-width: 1023px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+            <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png" alt="Escape Room logo" width="134" height="50">
+          </picture>
+        </a>
+        <div class="header__menu header__menu--nojs">
+          <button class="header__toggle" type="button"><span>меню</span></button>
+          <nav class="header__site-nav site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a href="quests.html" class="site-nav__link">КВЕСТЫ</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">новичкам</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">отзывы</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">акции</a></li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link" tabindex="0">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a href="#" class="header__link header__link--city">
+              <svg class="header__icon" width="16" height="21">
+                <use xlink:href="img/sprite_auto.svg#pin-icon"></use>
+              </svg>
+              <span>НОВОСИБИРСК</span>
+            </a>
+            <a class="header__link" href="tel:83832840160">
+              <span>8 (383) 284 01 60</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="popup popup--nojs popup__city-popup">
+      <div class="popup__wrapper">
+        <button class="popup__toggle" type="button" tabindex="7"><span class="visually-hidden">Закрыть
+            окно</span></button>
+        <h2>Ваш город:</h2>
+        <a href="#" class="popup__gps-link" tabindex="1">Определить местоположение</a>
+        <p>... или выберите вручную</p>
+        <ul class="popup__cities-list">
+          <li class="popup__city"><a href="#" class="popup__link popup__link--active" tabindex="2">Новосибирск</a></li>
+          <li class="popup__city"><a href="#" class="popup__link" tabindex="3">Иркутск</a></li>
+          <li class="popup__city"><a href="#" class="popup__link" tabindex="4">Смоленск</a></li>
+          <li class="popup__city"><a href="#" class="popup__link" tabindex="5">Волгоград</a></li>
+          <li class="popup__city"><a href="#" class="popup__link" tabindex="6">Комсомольск-на-Амуре</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--insta">
+                <span class="visually-hidden">Ссылка на Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk">
+                <span class="visually-hidden">Ссылка на ВКонтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="popup-form.html" class="footer__link">Задать вопрос</a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
